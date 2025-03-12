@@ -1,0 +1,74 @@
+//header scroll
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $("header").outerHeight();
+$(window).scroll(function(event){
+    didScroll = true;
+});
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $("header").removeClass('nav-down').addClass('nav-up');
+        searchDropdown.classList.remove("showDropdown");
+      } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+          $("header").removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    lastScrollTop = st;
+}
+
+// sidebar
+const body = document.querySelector("body"),
+sidebar = document.querySelector(".sidebar"),
+menuBtns = document.querySelectorAll(".hamburger"),
+overlay = document.querySelector(".overlay"),
+closeButton = body.querySelector(".close"),
+header = document.querySelector("#navbar");
+
+menuBtns.forEach((menuBtn) => {
+  menuBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    sidebar.classList.toggle("open");
+    overlay.classList.toggle("dark");
+    $(window).scroll(function(event){
+      didScroll = didScroll ? false : true;
+  });
+  });
+});
+
+body.addEventListener("click", () => {
+  if (sidebar.attributes.class.value.includes("open")) {
+    sidebar.classList.remove("open");
+    overlay.classList.remove("dark");
+    $(window).scroll(function(event){
+      didScroll = true;
+  });
+  }
+});
+
+
+// search dropdown
+const searchButton = document.querySelector(".searchButton");
+const searchDropdown = document.querySelector(".search-dropdown");
+
+searchButton.addEventListener("click", (e) => {
+  e.stopPropagation();
+  searchDropdown.classList.toggle("showDropdown");
+});
+
+

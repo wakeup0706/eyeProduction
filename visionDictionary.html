@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>視力のお悩み解決サイトの決定版！</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="./assets/css/Common/style.css" />
+    <link rel="stylesheet" href="./assets/css/Layout/header.css" />
+    <link rel="stylesheet" href="./assets/css/Pages/visionDictionary.css" />
+    <link rel="stylesheet" href="./assets/css/Layout/footer.css" />
+
+</head>
+<body>
+    <header id="navbar" class="nav-down">
+        <div class="top-header flex container">
+            <div class="hamburger">
+                <div class="circle"><div></div></div>
+            </div>
+            <div class="logo-content">
+                <div class="idea"><p>その目に、未来を。視力ケアの最前線</p></div>
+                <div class="logo">
+                    <img src="./assets/img/logo.jpg" alt="logo" />
+                </div>
+            </div>
+            <div class="sns-content flex">
+                <div><img src="./assets/img/Icons/sns1.png" alt=""></div>
+                <div><img src="./assets/img/Icons/sns2.png" alt=""></div>
+                <div><img src="./assets/img/Icons/sns3.png" alt=""></div>
+                <div><img src="./assets/img/Icons/sns4.png" alt=""></div>
+                <div><img src="./assets/img/Icons/sns5.png" alt=""></div>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="menuButtons flex space-between container">
+                <div class="menuButton">
+                    <div class="icon"><img src="./assets/img/Icons/iconTop.png" alt="top"></div>
+                    <p>TOP</p>
+                </div>
+                <div class="menuButton">
+                    <div class="icon"><img src="./assets/img/Icons/iconTest.png" alt="test"></div>
+                    <p>ウェブで視力検査</p>
+                </div>
+                <div class="menuButton">
+                    <div class="icon"><img src="./assets/img/Icons/iconResult.png" alt="result"></div>
+                    <p>視力改善可能性判定</p>
+                </div>
+                <div class="menuButton">
+                    <div class="icon"><img src="./assets/img/Icons/iconMdic.png" alt="mdic"></div>
+                    <p>視力回復辞書</p>
+                </div>
+                <div class="menuButton">
+                    <div class="icon"><img src="./assets/img/Icons/iconDic.png" alt="dic"></div>
+                    <p>視力回復辞書</p>
+                </div>
+                <div class="menuButton">
+                    <div class="icon"><img src="./assets/img/Icons/iconFood.png" alt="food"></div>
+                    <p>目の健康レシピ</p>
+                </div>
+                <div class="searchButton">
+                    <div class="button"><img src="./assets/img/Icons/iconSearch.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div id="searchDropdown" class="search-dropdown">
+            <div class="searchmenu">
+                <div class="container">
+                    <div class="search-Button">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit">検 索</button>
+                    </div>
+                </div>
+            </div>
+            <div class="latest-link">
+                <div class="container">
+                    <div class="latest-link-title flex">
+                        <div class="hotKeyword">HOTワード</div>
+                        <div><p>視力回復</p></div>
+                        <div><p>視力検査</p></div>
+                        <div><p>サプリ</p></div>
+                        <div><p>ホームワーク</p></div>
+                        <div><p>近視</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="close"><p>✖</p></div>
+            <div class="category"><p>カテゴリ</p></div>
+            <ul class="lists">
+                <li class="list">
+                  <a href="#" class="nav-link">
+                      <span class="link">webで視力検査</span>
+                      <span class="icon">&#10095;</span>
+                  </a>
+                </li>
+                <li class="list">
+                  <a href="#" class="nav-link">
+                      <span class="link">視力向上可能性判定</span>
+                      <span class="icon">&#10095;</span>
+                  </a>
+                </li>
+                <li class="list">
+                  <a href="#" class="nav-link">
+                      <span class="link">視力回復辞典</span>
+                      <span class="icon">&#10095;</span>
+                  </a>
+                </li>
+                <li class="list">
+                  <a href="#" class="nav-link">
+                      <span class="link">目の用語辞典</span>
+                      <span class="icon">&#10095;</span>
+                  </a>
+                </li>
+                <li class="list">
+                  <a href="#" class="nav-link">
+                      <span class="link">目に優しいレシピ </span>
+                      <span class="icon">&#10095;</span>
+                  </a>
+                </li>
+                <li class="list">
+                  <a href="#" class="nav-link">
+                      <span class="link">Kindleブックス</span>
+                      <span class="icon">&#10095;</span>
+                  </a>
+                </li>
+                <li class="list">
+                  <a href="#" class="nav-link">
+                      <span class="link">アイケア商品</span>
+                      <span class="icon">&#10095;</span>
+                  </a>
+                </li>
+                <li class="list">
+                  <a href="#" class="nav-link">
+                      <span class="link">お知らせ</span>
+                      <span class="icon">&#10095;</span>
+                  </a>
+                </li>
+                <li class="list">
+                  <a href="#" class="nav-link">
+                      <span class="link">お問い合わせ</span>
+                      <span class="icon">&#10095;</span>
+                  </a>
+                </li>
+                <li class="list">
+                  <a href="#" class="nav-link">
+                      <span class="link">会社概要</span>
+                      <span class="icon">&#10095;</span>
+                  </a>
+                </li>
+            </ul>
+        </div>
+        <section class="overlay"></section>
+    </header>
+    <main>
+        <section class="popularArticles inConteiner">
+            <div class="bg vector3"><img src="./assets/img/backgrounds/Vector3.png" alt=""></div>
+            <div class="bg vector4"><img src="./assets/img/backgrounds/Vector4.png" alt=""></div>
+            <div class="bg vector5"><img src="./assets/img/backgrounds/Vector5.png" alt=""></div>
+            <div class="bg vector6"><img src="./assets/img/backgrounds/Vector6.png" alt=""></div>
+            <div class="bg vector7"><img src="./assets/img/backgrounds/Vector7.png" alt=""></div>
+            <div class="bg vector8"><img src="./assets/img/backgrounds/Vector8.png" alt=""></div>
+            <div class="breadcrumb"><span>TOP</span><span>> 視力回復辞典</span></div>
+            <div class="categoryName"><p>視力回復辞典</p></div>
+            <div class="popularTitle">
+                <div class="popularTitleIcon"><img src="./assets/img/Icons/popular.png" alt="testResult"></div>
+                <div class="section-title"><p class="text-top">人気記事</p></div>
+            </div>
+            <div class="popularArticle flex">
+                <div class="bestPopular">
+                    <div class="articleImg"><img src="./assets/img/popular/popular1.png" alt=""></div>
+                    <div class="articleContent">
+                        <div class="articleType-text"><p>視力回復辞典(視力回復の真実)</p></div>
+                        <div class="articleType-mark"><img src="./assets/img/Icons/mark.png" alt="mark"></div>
+                        <div class="articleContent-text">
+                            <p>視力回復の結果を出す子の夏休みの過ごし方視力回復の結果を出す子の夏休みの過ごし方視力回復の結果を出す子の夏休みの過ごし方視力回復の結果を出す子の夏休みの過ごし方視力回復の結果を出す子の夏休みの過ごし方視力回復の結果を出す子の夏休みの過ごし方視力回復の結果を出す子の夏休みの過ごし方</p>
+                        </div>
+                        <div class="articleDate"><p>2025/02/17</p></div>
+                    </div>
+                </div>
+                <div class="seeMore">
+                    <div class="seeMoreArticles">
+                        <div class="seeMoreArticle">
+                            <div class="articleImg"><img src="./assets/img/popular/popular2.webp" alt=""></div>
+                            <div class="articleContent">
+                                <div class="articleType">
+                                    <div class="articleType-text"><p>視力回復辞典(視力回復の真実)</p></div>
+                                    <div class="articleType-mark"><img src="./assets/img/Icons/mark.png" alt="mark"></div>
+                                </div>
+                                <div class="articleContent-text">
+                                    <p>視力回復の結果を出す子の夏休みの過ごし方</p>
+                                </div>
+                                <div class="articleContent-date"><p>2025/02/17</p></div>
+                            </div>
+                        </div>
+                        <div class="seeMoreArticle">
+                            <div class="articleImg"><img src="./assets/img/popular/popular3.webp" alt=""></div>
+                            <div class="articleContent">
+                                <div class="articleType">
+                                    <div class="articleType-text"><p>視力回復辞典(視力回復の真実)</p></div>
+                                    <div class="articleType-mark"><img src="./assets/img/Icons/mark.png" alt="mark"></div>
+                                </div>
+                                <div class="articleContent-text">
+                                    <p>Ｂ判定は合格？</p>
+                                </div>
+                                <div class="articleContent-date"><p>2025/02/17</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seeMoreArticles">
+                        <div class="seeMoreArticle">
+                            <div class="articleImg"><img src="./assets/img/popular/popular4.webp" alt=""></div>
+                            <div class="articleContent">
+                                <div class="articleType">
+                                    <div class="articleType-text"><p>目に優しいレシピ</p></div>
+                                    <div class="articleType-mark"><img src="./assets/img/Icons/mark.png" alt="mark"></div>
+                                </div>
+                                <div class="articleContent-text">
+                                    <p>豚肉とキャベツ、ニンジンの味噌炒め</p>
+                                </div>
+                                <div class="articleContent-date"><p>2025/02/17</p></div>
+                            </div>
+                        </div>
+                        <div class="seeMoreArticle">
+                            <div class="articleImg"><img src="./assets/img/popular/popular5.webp" alt=""></div>
+                            <div class="articleContent">
+                                <div class="articleType">
+                                    <div class="articleType-text"><p>目に優しいレシピ</p></div>
+                                    <div class="articleType-mark"><img src="./assets/img/Icons/mark.png" alt="mark"></div>
+                                </div>
+                                <div class="articleContent-text">
+                                    <p>豚肉とキャベツ、ニンジンの味噌炒め</p>
+                                </div>
+                                <div class="articleContent-date"><p>2025/02/17</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="allVision inConteiner">
+            <div class="bg vector10"><img src="./assets/img/backgrounds/Vector10.png" alt=""></div>
+            <div class="visionDictionaryTitle">
+                <div class="visionDictionaryIcon"><img src="./assets/img/Icons/visionDic.png" alt="testResult"></div>
+                <div class="section-title"><p class="text-top">すべての記事</p></div>
+            </div>
+            <div class="allVisionArticles">
+                    <div class="seeMoreArticle">
+                        <div class="articleImg"><img src="./assets/img/articles/article1.webp" alt=""></div>
+                        <div class="articleContent">
+                            <div class="articleType">
+                                <div class="articleType-text"><p>視力回復辞典(視力回復の真実)</p></div>
+                                <div class="articleType-mark"><img src="./assets/img/Icons/mark.png" alt="mark"></div>
+                            </div>
+                            <div class="articleContent-text">
+                                <p>視力回復の結果を出す子の夏休みの過ごし方</p>
+                            </div>
+                            <div class="articleContent-date"><p>2025/02/17</p></div>
+                        </div>
+                    </div>
+                    <div class="seeMoreArticle">
+                        <div class="articleImg"><img src="./assets/img/articles/article2.webp" alt=""></div>
+                        <div class="articleContent">
+                            <div class="articleType">
+                                <div class="articleType-text"><p>視力回復辞典(視力回復の真実)</p></div>
+                                <div class="articleType-mark"><img src="./assets/img/Icons/mark.png" alt="mark"></div>
+                            </div>
+                            <div class="articleContent-text">
+                                <p>Ｂ判定は合格？</p>
+                            </div>
+                            <div class="articleContent-date"><p>2025/02/17</p></div>
+                        </div>
+                    </div>
+                    <div class="seeMoreArticle">
+                        <div class="articleImg"><img src="./assets/img/articles/article3.jpg" alt=""></div>
+                        <div class="articleContent">
+                            <div class="articleType">
+                                <div class="articleType-text"><p>視力回復辞典(視力回復の真実)</p></div>
+                                <div class="articleType-mark"><img src="./assets/img/Icons/mark.png" alt="mark"></div>
+                            </div>
+                            <div class="articleContent-text">
+                                <p>Ｂ判定は合格？</p>
+                            </div>
+                            <div class="articleContent-date"><p>2025/02/17</p></div>
+                        </div>
+                    </div>
+                    <div class="seeMoreArticle">
+                        <div class="articleImg"><img src="./assets/img/articles/article1.webp" alt=""></div>
+                        <div class="articleContent">
+                            <div class="articleType">
+                                <div class="articleType-text"><p>視力回復辞典(視力回復の真実)</p></div>
+                                <div class="articleType-mark"><img src="./assets/img/Icons/mark.png" alt="mark"></div>
+                            </div>
+                            <div class="articleContent-text">
+                                <p>視力回復の結果を出す子の夏休みの過ごし方</p>
+                            </div>
+                            <div class="articleContent-date"><p>2025/02/17</p></div>
+                        </div>
+                    </div>
+                    <div class="seeMoreArticle">
+                        <div class="articleImg"><img src="./assets/img/articles/article2.webp" alt=""></div>
+                        <div class="articleContent">
+                            <div class="articleType">
+                                <div class="articleType-text"><p>視力回復辞典(視力回復の真実)</p></div>
+                                <div class="articleType-mark"><img src="./assets/img/Icons/mark.png" alt="mark"></div>
+                            </div>
+                            <div class="articleContent-text">
+                                <p>Ｂ判定は合格？</p>
+                            </div>
+                            <div class="articleContent-date"><p>2025/02/17</p></div>
+                        </div>
+                    </div>
+                    <div class="seeMoreArticle">
+                        <div class="articleImg"><img src="./assets/img/articles/article3.jpg" alt=""></div>
+                        <div class="articleContent">
+                            <div class="articleType">
+                                <div class="articleType-text"><p>視力回復辞典(視力回復の真実)</p></div>
+                                <div class="articleType-mark"><img src="./assets/img/Icons/mark.png" alt="mark"></div>
+                            </div>
+                            <div class="articleContent-text">
+                                <p>Ｂ判定は合格？</p>
+                            </div>
+                            <div class="articleContent-date"><p>2025/02/17</p></div>
+                        </div>
+                    </div>
+                    <div class="seeMoreArticle">
+                        <div class="articleImg"><img src="./assets/img/articles/article1.webp" alt=""></div>
+                        <div class="articleContent">
+                            <div class="articleType">
+                                <div class="articleType-text"><p>視力回復辞典(視力回復の真実)</p></div>
+                                <div class="articleType-mark"><img src="./assets/img/Icons/mark.png" alt="mark"></div>
+                            </div>
+                            <div class="articleContent-text">
+                                <p>視力回復の結果を出す子の夏休みの過ごし方</p>
+                            </div>
+                            <div class="articleContent-date"><p>2025/02/17</p></div>
+                        </div>
+                    </div>
+                    <div class="seeMoreArticle">
+                        <div class="articleImg"><img src="./assets/img/articles/article2.webp" alt=""></div>
+                        <div class="articleContent">
+                            <div class="articleType">
+                                <div class="articleType-text"><p>視力回復辞典(視力回復の真実)</p></div>
+                                <div class="articleType-mark"><img src="./assets/img/Icons/mark.png" alt="mark"></div>
+                            </div>
+                            <div class="articleContent-text">
+                                <p>Ｂ判定は合格？</p>
+                            </div>
+                            <div class="articleContent-date"><p>2025/02/17</p></div>
+                        </div>
+                    </div>
+                    <div class="seeMoreArticle">
+                        <div class="articleImg"><img src="./assets/img/articles/article3.jpg" alt=""></div>
+                        <div class="articleContent">
+                            <div class="articleType">
+                                <div class="articleType-text"><p>視力回復辞典(視力回復の真実)</p></div>
+                                <div class="articleType-mark"><img src="./assets/img/Icons/mark.png" alt="mark"></div>
+                            </div>
+                            <div class="articleContent-text">
+                                <p>Ｂ判定は合格？</p>
+                            </div>
+                            <div class="articleContent-date"><p>2025/02/17</p></div>
+                        </div>
+                    </div>
+            </div>
+            <div class="pagenation flex">
+                <div class="before"><img src="./assets/img/Icons/before.png" alt="«"><span>«</span></div>
+                <div class="action">1</div>
+                <div>2</div>
+                <div>3</div>
+                <div class="after"><img src="./assets/img/Icons/after.png" alt="»"><span>»</span></div>
+            </div>
+        </section>
+        <section class="visionImproment">
+            <div class="backgroundImg"></div>
+            <div class="baners flex space-between">
+                <div class="baner leftBaner"></div>
+                <div class="baner rightBaner"></div>
+            </div>
+        </section>
+        <section class="endBanner">
+            <div class="container"><img src="./assets/img/eyetest_baner.jpg" alt="eyetest_baner"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-content flex space-between">
+                <div class="footer-content-left">
+                    <div class="logo"><img src="./assets/img/logo.jpg" alt="logo"></div>
+                    <div class="address">有限会社ドリームチーム</div>
+                    <div class="phone">
+                        <p>〒227-0064　神奈川県横浜市青葉区田奈町 43-3-2F</p>
+                        <p>TEL:045-988-5124    /    FAX:045-988-5304</p>
+                        <p>電話応対時間：11～14時（土日祝休）</p>
+                    </div>
+                    <div class="sns-content flex space-between">
+                        <div><img src="./assets/img/Icons/sns1.png" alt=""></div>
+                        <div><img src="./assets/img/Icons/sns2.png" alt=""></div>
+                        <div><img src="./assets/img/Icons/sns3.png" alt=""></div>
+                        <div><img src="./assets/img/Icons/sns4.png" alt=""></div>
+                        <div><img src="./assets/img/Icons/sns5.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="footer-content-right">
+                    <ul class="flex space-around">
+                        <li><a href="#">利用規約 </a></li>
+                        <li><a href="#">特定商取引</a></li>
+                        <li><a href="#">利用規約</a></li>
+                        <li><a href="#">プライバシーポリシー</a></li>
+                        <li><a href="#">運営会社 </a></li>
+                        <li><a href="#">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="topButton">TOP</div>
+        </div>
+        <div class="footer-background"><img src="./assets/img/backgrounds/footerBackground.png" alt=""></div>
+        <div class="floor"><div class="container"">Copyright(C)  2001 眼育総研事務局. All rights reserved.</div></div>
+    </footer>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<!-- sidebar -->
+<script src="./assets/js/sidebar.js"></script>
+<!--  -->
+</html>
