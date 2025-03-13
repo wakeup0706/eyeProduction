@@ -1,0 +1,125 @@
+body{
+    padding-top: 95px;
+}
+.menu{
+    position:relative;
+}
+.terms-color{
+    background-color: #FFFFFF;
+    color: #323232;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.subject{
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.title{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 43px;
+}
+.title-list{
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 26px;
+    line-height: 30px;
+}
+.title-list-content{
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 18px;
+    line-height: 30px;
+}
+.paper{
+    border-radius: 10px;
+    margin-bottom: 40px;
+    padding-block: 60px;
+}
+.left-space{
+    padding-left: 30px;
+}
+.indent{
+    text-indent: -20px;
+    padding-left: 20px;
+}
+.no-indent{
+    text-indent: 0px;
+    margin-left: -20px;
+}
+.end-date{
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 40px;
+}
+/* Hamburger Menu */
+.hamburger{
+    display: none;
+    position: absolute;
+    left: 25px;
+    bottom:5px;
+    z-index: 2;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hamburger .circle{
+    top: 42px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.hamburger .circle:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.hamburger .circle div{
+    width: 50%;
+    height: 2px;
+    background-color: #84C225;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hamburger .circle::after,
+.hamburger .circle::before{
+    content: "";
+    width: 50%;
+    height: 2px;
+    background-color: #84C225;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hamburger .circle::after{
+    top: 35%;
+}
+.hamburger .circle::before{
+    top: 65%;
+}
+
+@media screen and (max-width: 1190px){
+    .paper{
+        border-radius: 5px;
+    }
+    .indent{
+        padding-left: 40px;
+    }
+}
+@media screen and (max-width: 504px){
+    .hamburger{
+        display: block;
+    }
+    .sidebar {
+        margin-top: 61px;
+        width: 100%;
+    }
+}
+.nav-up{
+    top: 0;
+}
