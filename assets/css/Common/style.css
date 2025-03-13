@@ -87,3 +87,49 @@ p{
         left: 0;
     }
 }
+/* background vector */
+.bg{
+    position: absolute;
+    opacity: 0.5;
+}
+.vector1{
+    top: 60px;
+    left: -10%;
+}
+.vector2{
+    top: 300px;
+    right: -20%;
+}
+.vector3{
+    top: 100px;
+    left: 30px;
+}
+.vector4{
+    top: 100px;
+    right: 0;
+}
+.vector5{
+    top: 200px;
+    left: -11%;
+}
+.vector6{
+    top: 30%;
+    right: -20%;
+}
+.vector7{
+    top: 40%;
+    left: 50%;
+}
+.vector8{
+    top: 61%;
+    left: -10%;
+}
+.vector9{
+    top: 25%;
+    opacity: 0.8;
+    left:-25%;
+}
+.vector10{
+    top: -15%;
+    right: -5%;
+}

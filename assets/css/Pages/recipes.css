@@ -244,9 +244,9 @@ main{
 }
 .visionDictionaryIcon{
     position: relative;
-    width: 58px;
+    width: 68px;
     z-index: 1;
-    top: -16px;
+    top: -10px;
 }
 .allVision .sortButton{
     position: absolute;
@@ -262,8 +262,8 @@ main{
 }
 @media only screen and (max-width: 610px) {
     .visionDictionaryIcon{
-        width: 40px;
-        top: -7px;
+        width: 47px;
+        top: -4px;
     }
 }
 @media only screen and (max-width: 797px) {
