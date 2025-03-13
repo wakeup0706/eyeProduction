@@ -5,7 +5,6 @@ header {
     background-color: white;
     z-index: 100;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    /* height: 212px; */
     position: fixed;
     top: 0;
     transition: top 0.7s ease-in-out;
@@ -252,6 +251,9 @@ header .top-header .sns-content img:hover{
 }
 
 @media screen and (max-width: 504px) {
+    body {
+        padding-top: 152px;
+    }
     header .top-header{
         height: 98px;
         padding: 12px 0;
