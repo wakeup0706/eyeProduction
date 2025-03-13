@@ -7,57 +7,7 @@
     --background: #EDF2F6;
 }
 /* first content */
-main{
-    overflow: hidden;
-}
 
-/* background vector */
-.bg{
-    position: absolute;
-    opacity: 0.5;
-}
-.vector1{
-    top: 60px;
-    left: -10%;
-}
-.vector2{
-    top: 300px;
-    right: -20%;
-}
-.vector3{
-    top: 100px;
-    left: 30px;
-}
-.vector4{
-    top: 100px;
-    right: 0;
-}
-.vector5{
-    top: 200px;
-    left: -11%;
-}
-.vector6{
-    top: 30%;
-    right: -20%;
-}
-.vector7{
-    top: 40%;
-    left: 50%;
-}
-.vector8{
-    top: 61%;
-    left: -10%;
-}
-.vector9{
-    top: 25%;
-    opacity: 0.8;
-    left:-25%;
-}
-.vector10{
-    top: -15%;
-    right: -5%;
-}
-/* Article content */
 .popularArticles{
     position: relative;    
 }
@@ -76,7 +26,7 @@ main{
     text-align: center;
     font-size: 32px;
     font-weight: 700;
-    margin-block: 50px 90px;
+    margin-block: 50px 50px;
     color: var(--text-black);
 }
 .popularTitle{
@@ -90,7 +40,6 @@ main{
 }
 
 @media only screen and (max-width: 610px) {
-
     .popularTitleIcon{
         position: relative;
         width: 50px;
@@ -102,7 +51,7 @@ main{
     position: relative;
     gap: 30px;
     padding-inline: 20px;
-    margin-block: 10px 140px;
+    margin-block: 10px 60px;
 }
 .popularArticle .bestPopular{
     background-color: #ffffff;
@@ -235,141 +184,150 @@ main{
 /* end responsive */
 
 /*  all visionDictionary content */
+.notice{
+    background-image: url(../../img/backgrounds/notice.jpg);
+}
 .allVision{
     position: relative;
-    padding-block: 0 280px;
+    padding-block: 100px 280px;
 }
-.visionDictionaryTitle{
+.noticeTitle{
     position: relative;
 }
-.visionDictionaryIcon{
+.noticeIcon{
     position: relative;
     width: 68px;
     z-index: 1;
     top: -10px;
 }
-.allVision .sortButton{
-    position: absolute;
-    right: 0;
-    top: 0;
-    color: var(--text-black);
-    display: flex;
-    gap: 20px;
-    justify-content: flex-end;
-}
-.allVision .sortButton .selected{
-    cursor: pointer;
-}
 @media only screen and (max-width: 610px) {
-    .visionDictionaryIcon{
+    .noticeIcon{
         width: 47px;
         top: -4px;
     }
 }
-@media only screen and (max-width: 797px) {
-    .allVision .sortButton{
-        top: 55px;
-        color: var(--text-black);
-        gap: 10px;
-        font-size: 12px;
-    }
-}
-
 .navtabs {
     display: flex;
     justify-content: center;
-    margin-top: 70px;
+    margin-block: 70px 20px;
     position: relative;
-  }
-  .navtabs .navtab {
+}
+.navtabs .navtab {
     padding: 10px 30px;
     cursor: pointer;
     color: var(--text-black);
     transition: color 0.3s;
     border-bottom: 3px solid #96969696;
-  }
-  .navtabs .navtab:hover {
+}
+.navtabs .navtab:hover {
     color: var( --section-title-underline);
-  }
-  .navtabs .navtab.active {
+}
+.navtabs .navtab.active {
     color: var( --section-title-underline);
     font-weight: 600;
-  }
-  .navtabs .underline {
+}
+.navtabs .underline {
     position: absolute;
     bottom: 0;
     height: 3px;
     background: var(--seeMore-button);
     transition: left 0.3s ease, width 0.3s ease;
-  }
-
-  .vision_articles.active{
+}
+@media only screen and (max-width: 616px) {
+    .allVision{
+        padding-block: 55px 280px;
+    }
+    .navtabs{
+        margin-block: 30px 20px;
+    }
+    .navtabs .navtab {
+        padding: 10px 10px;
+    }
+}
+.vision_articles.active{
     display: block;
-  }
-  .vision_articles{
+}
+.vision_articles{
     display: none;
-  }
-.allVisionArticles{
-    display: none;
-    margin-block: 10px;
+}
+/* vision_articles content  */
+.vision_articles{
+    padding-inline: 40px;
+}
+.vision_articles .content{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(244px, 1fr)); /* Ensures equal width */
-    gap: 20px;
-    margin-inline: auto;
-    padding-inline: 70px;
-    margin-top: 35px;
+    grid-template-columns: 1fr 1fr 9fr;
+    gap: 10px;
+    padding: 12px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    background-color: #FFFFFF;
 }
-.allVisionArticles .seeMoreArticle{
-    border-radius:5px;
-    max-width: 340px;
-    box-shadow: 0 3px 3px #0000004a;
-    overflow: hidden;
-}
-.allVisionArticles .seeMoreArticle .articleImg{
-    height: 55%;
-    overflow: hidden;
-}
-.allVisionArticles .seeMoreArticle .articleImg img{
-    height: 100%;
-    object-fit: cover;
-}
-.allVisionArticles .articleContent{
-    position: relative;
-    max-height: 25px;
-}
-.allVisionArticles .articleContent .articleType{
-    margin-top: -10px;
-    position: relative;
-}
-.allVisionArticles .articleContent .articleType .articleType-text {
-    max-width: 180px;
-    width: fit-content;
-    margin-inline: auto;
-    color: #ffffff;
-    font-size: 12px;
-    padding-inline: 5px;
-    background-color: var(--card-type);
-    border: 1px solid var(--card-type);
-}
-
-.allVisionArticles .articleContent .articleType .articleType-mark{
-    max-width: 28px;
-    max-height: 28px;
-    position: absolute;
-    right: 13px;
-    bottom: 0;
-}
-.allVisionArticles .articleContent .articleContent-text{
-    max-height: 150px;
-    padding: 20px;
+.vision_articles .content .contentDate{
     font-size: 16px;
+    font-weight: 500;
+    color: var(--text-black);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.vision_articles .content .contnetImage{
+    border-radius: 5px;
     overflow: hidden;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
-.allVisionArticles .articleContent .articleContent-date{
-    color: #888888;
-    font-size: 14px;
-    padding-left: 20px;
+@media only screen and (max-width: 660px) {
+    .vision_articles .content{
+        grid-template-columns: 3fr 1fr 9fr;
+    }
 }
+@media only screen and (max-width: 450px) {
+    .vision_articles .content .contnetImage{
+        width: 80px;
+    }
+}
+.vision_articles .content .contentText{
+    padding-right: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.vision_articles .vector2{
+    right: -110px;
+}
+@media screen and (max-width: 580px){
+    .vision_articles .content .contentText{
+        padding-right: 10px;
+    }
+    .vision_articles .content{
+        gap: 10px;
+        padding: 10px;
+        margin-right: 15px;
+        border-radius: 3px;
+        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+    }
+    .vision_articles .content .contentText{
+        font-size: 14px;
+        font-weight: 400;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 450px){
+    .vision_articles .content{
+        margin-right: 0;
+        border-radius: 3px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .vision_articles .content .contentDate{
+        display: none;
+    }
+}
+/* end vision_articles content */
 .allVision .pagenation{
     width: fit-content;
     margin-inline: auto;
@@ -416,12 +374,11 @@ main{
     font-size: 20px;
     padding-left: 14px;
 }
-@media only screen and (max-width: 440px) {
-    .allVisionArticles{
-        padding-inline: 20px;
-    }
+.notice{
+    position: relative;
 }
 /* end all visionDictionary content */
+
 
 /* visionImproment content */
 .visionImproment{
@@ -518,9 +475,9 @@ main{
     }
 }
 @media screen and (max-width: 380px) {
-    .visionImproment .backgroundImg{
-        height: 470px;
-        margin-top: -200px;
+    .visionImproment .backgroundImg {
+        height: 280px;
+        margin-top: -282px;
     }
     .baners{
         margin-top: -200px;

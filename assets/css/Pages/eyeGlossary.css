@@ -6,11 +6,6 @@
     --text-black: #323232;
     --background: #EDF2F6;
 }
-/* first content */
-main{
-    overflow: hidden;
-}
-
 
 /* Article content */
 .popularArticles{
@@ -559,9 +554,9 @@ main{
     }
 }
 @media screen and (max-width: 380px) {
-    .visionImproment .backgroundImg{
-        height: 470px;
-        margin-top: -200px;
+    .visionImproment .backgroundImg {
+        height: 280px;
+        margin-top: -282px;
     }
     .baners{
         margin-top: -200px;

@@ -6,57 +6,7 @@
     --text-black: #323232;
     --background: #EDF2F6;
 }
-/* first content */
-main{
-    overflow: hidden;
-}
 
-/* background vector */
-.bg{
-    position: absolute;
-    opacity: 0.5;
-}
-.vector1{
-    top: 60px;
-    left: -10%;
-}
-.vector2{
-    top: 300px;
-    right: -20%;
-}
-.vector3{
-    top: 100px;
-    left: 30px;
-}
-.vector4{
-    top: 100px;
-    right: 0;
-}
-.vector5{
-    top: 200px;
-    left: -11%;
-}
-.vector6{
-    top: 30%;
-    right: -20%;
-}
-.vector7{
-    top: 40%;
-    left: 50%;
-}
-.vector8{
-    top: 61%;
-    left: -10%;
-}
-.vector9{
-    top: 25%;
-    opacity: 0.8;
-    left:-25%;
-}
-.vector10{
-    top: -15%;
-    right: -5%;
-}
 /* Article content */
 .popularArticles{
     position: relative;    
@@ -225,6 +175,7 @@ main{
     }
     .popularArticle{
         flex-direction: column;
+        margin-block: 10px 80px;
     }
 }
 @media only screen and (max-width: 486px) {
@@ -302,7 +253,11 @@ main{
     background: var(--seeMore-button);
     transition: left 0.3s ease, width 0.3s ease;
   }
-
+@media only screen and (max-width: 704px) {
+    .navtabs .navtab{
+        padding: 10px 10px;
+    }
+}
   .vision_articles.active{
     display: block;
   }
@@ -519,8 +474,8 @@ main{
 }
 @media screen and (max-width: 380px) {
     .visionImproment .backgroundImg{
-        height: 470px;
-        margin-top: -200px;
+        height: 280px;
+        margin-top: -282px;
     }
     .baners{
         margin-top: -200px;

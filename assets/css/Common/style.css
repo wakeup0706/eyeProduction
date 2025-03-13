@@ -87,6 +87,9 @@ p{
         left: 0;
     }
 }
+main{
+    overflow: hidden;
+}
 /* background vector */
 .bg{
     position: absolute;
