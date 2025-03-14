@@ -123,3 +123,40 @@ body{
 .nav-up{
     top: 0;
 }
+
+/* transaction */
+.row{
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    gap: 20px;
+    border-bottom: 1px solid gray;
+    padding-block: 41px 32px;
+}
+.row-title{
+    margin-inline: auto;
+}
+
+/* privacyPolicy */
+.middle-list{
+    font-size: 36px;
+    font-weight: 500;
+    margin-block: 60px 40px;
+    border-bottom: 3px solid #21726A;
+}
+.privacy-title{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
+.bottom-space{
+    margin-bottom: 40px;
+}
+@media screen and (max-width: 504px){
+    .middle-list{
+        font-size: 32px;
+        margin-block: 30px 20px;
+    }
+    .privacy-title{
+        font-size: 18px;
+    }
+}
