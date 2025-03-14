@@ -1,0 +1,218 @@
+:root {
+    --section-title: #84C225;
+    --section-title-underline: #00814D;
+    --seeMore-button: #37BEB0;
+    --card-type: #84C225;
+    --text-black: #323232;
+    --background: #EDF2F6;
+}
+body{
+    padding-top: 95px;
+}
+.breadcrumb{
+    position: relative;
+    font-size: 14px;
+    margin-block: 10px;
+    color: var(--text-black);
+}
+.breadcrumb span{
+    margin-inline: 6px;
+    cursor: pointer;
+}
+/* SNS Content */
+main .sns-content{
+    max-width: 185px;
+    gap: 10px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+main .sns-content.flex{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+main .sns-content div{
+    width: 31px;
+    cursor: pointer;
+    height: 31px;
+    margin: 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+main .sns-content div:hover{
+    transform: translateY(-3px);
+}
+main .sns-content img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: brightness(1);
+    transition: filter 0.3s ease;
+}
+main .sns-content img:hover{
+    filter: brightness(1.1);
+}
+
+.inquiry-content{
+    width: 100%;
+    gap:20px;
+}
+.flex-left{
+    max-width: 825px;
+    width: 80%;
+    background-color: #ffffff70;
+    margin-bottom: 40px;
+}
+.flex-left .title{
+    padding-block: 3px;
+    border-bottom: 3px solid var(--section-title-underline);
+    margin-block: 20px;
+}
+.flex-left .title .text{
+    max-width: 675px;
+    width: 675px;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text-black);
+}
+.flex-left .banner{
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 80px;
+}
+.nav-up{
+    top: 0;
+}
+.flex-left .infor .infor-title{
+    position: relative;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 7px 60px;              
+    max-width:714px;
+    background-color: var(--seeMore-button);
+    color: white;
+}
+.flex-left .infor .infor-title::before{
+    content: "»";
+    margin-right: 10px;
+    font-size: 40px;
+    position:absolute;
+    top: 50%;
+    left: 20px;
+    color: #FFFDAB;
+    transform: translateY(-50%);
+}
+.flex-left .infor{
+    margin-top: 30px;
+}
+.flex-left .infor .infor-content p{
+    margin-block: 18px;
+    padding-left: 60px;
+    max-width: 720px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-black);
+}
+.infor-content p span{
+    color: var(--section-title-underline);
+    margin-right: 10px;
+}
+.flex-left .now{
+    margin-block: 90px;
+    font-size: 24px;
+    color: var(--text-black);
+    text-align: center;
+}
+.flex-left .now .now-content{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-black);
+    border-block: 4px double var(--section-title-underline);
+    padding: 25px 55px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.flex-right{
+    max-width: 355px;
+    width: 355px;
+}
+.flex-right .title{
+    font-size: 18px;
+    font-weight: 700;
+    width: 100%;
+    padding-block: 8px;
+    border-radius: 20px;
+    background-color: var(--seeMore-button);
+    text-align: center;
+    color: white;
+}
+.flex-right .banner{
+    width: 100%;
+    object-fit: contain;
+    margin-block: 15px 60px;
+}
+.flex-right .otherCategory{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+    max-height: 180px;
+    height: 180px;
+}
+.flex-right .otherCategory .otherCategory-item{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: var(--seeMore-button);
+}
+.flex-right .otherCategory .otherCategory-item .otherCategory-item-img{
+    margin-inline: auto;
+    padding-top:10%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-color: var(--seeMore-button);
+}
+.flex-right .otherCategory .otherCategory-item .otherCategory-item-text{
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    padding-top: 10%;
+}
+
+
+
+
+@media only screen and (max-width: 801px) {
+    body{
+        padding-top: 148px;
+    }
+    .flex-right{
+        display: none;
+    }
+    .flex-left{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 504px) {
+    body{
+        padding-top: 63px;
+    }
+    .flex-left .infor{
+        margin-block: 100px;
+    }
+    .flex-left .infor .infor-title{
+        font-size: 20px;
+    }
+    .flex-left .infor .infor-content p{
+        font-size:14px;
+    }
+    .flex-left .infor{
+        margin-block : 45px;
+
+    }
+    .flex-left .infor .infor-content p{
+        padding-left: 30px;
+    }
+}
