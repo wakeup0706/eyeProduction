@@ -1,0 +1,382 @@
+:root {
+    --section-title: #84C225;
+    --section-title-underline: #00814D;
+    --seeMore-button: #37BEB0;
+    --card-type: #84C225;
+    --text-black: #323232;
+    --background: #EDF2F6;
+}
+body{
+    padding-top: 95px;
+}
+/* Hamburger Menu */
+.hamburger{
+    display: none;
+    position: absolute;
+    left: 25px;
+    bottom:5px;
+    z-index: 2;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hamburger .circle{
+    top: 42px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.hamburger .circle:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.hamburger .circle div{
+    width: 50%;
+    height: 2px;
+    background-color: #84C225;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hamburger .circle::after,
+.hamburger .circle::before{
+    content: "";
+    width: 50%;
+    height: 2px;
+    background-color: #84C225;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hamburger .circle::after{
+    top: 35%;
+}
+.hamburger .circle::before{
+    top: 65%;
+}
+@media screen and (max-width: 504px){
+    .hamburger{
+        display: block;
+    }
+    .sidebar {
+        margin-top: 61px;
+        width: 100%;
+    }
+}
+
+
+.breadcrumb{
+    position: relative;
+    font-size: 14px;
+    margin-block: 10px;
+    color: var(--text-black);
+}
+.breadcrumb span{
+    margin-inline: 6px;
+    cursor: pointer;
+}
+/* SNS Content */
+main .sns-content{
+    max-width: 185px;
+    gap: 10px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+main .sns-content.flex{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+main .sns-content div{
+    width: 31px;
+    cursor: pointer;
+    height: 31px;
+    margin: 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+main .sns-content div:hover{
+    transform: translateY(-3px);
+}
+main .sns-content img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: brightness(1);
+    transition: filter 0.3s ease;
+}
+main .sns-content img:hover{
+    filter: brightness(1.1);
+}
+.nav-up{
+    top: 0;
+}
+.kindleBooksDetail-content{
+    width: 100%;
+    gap:20px;
+}
+.flex-left{
+    position: relative;
+    max-width: 825px;
+    width: 80%;
+    background-color: #ffffff70;
+    margin-bottom: 75px;
+}
+.flex-left .bookData{
+    width: 100%;
+}
+.flex-left .bookData .book-top{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+.flex-left .bookData .book-top .book-img img{
+    max-width: 300px;
+    height: 100%;
+}
+.flex-left .bookData .book-menu{
+    padding-left: 20px;
+    padding-top: 20%;
+}
+.flex-left .bookData .book-menu .book-menu-title{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.flex-left .bookData .book-menu .book-menu-author{
+    font-size: 17px;
+    color: #555555;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.flex-left .bookData .book-menu .line{
+    content: "";
+    width: 100%;
+    height: 2px;
+    margin-bottom: 15px;
+    background-color: var(--seeMore-button);
+}
+.flex-left .bookData .book-menu .book-menu-price{
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #EE6354;
+}
+.flex-left .bookData .book-menu .book-menu-publisher{
+    font-size: 15px;
+    color: var(--text-black);
+}
+.flex-left .bookData .book-content{
+    max-width: 710px;
+    margin-inline: auto;
+    margin-block: 60px 35px;
+}
+.flex-left .button-img{
+    max-width:88px;
+    max-height: 100px;
+    object-fit: contain;
+    overflow: hidden;
+}
+.flex-left.button-text{
+    max-width:150px;
+    max-height: 100px;
+    color: var(--text-black);   
+    overflow: hidden;
+    font-size: 14px;
+}
+.flex-left .nextButton{
+    right: 0;
+    flex-direction: row-reverse;
+}
+.flex-left .nextButton::after{
+    content: "次の記事 ⮚";
+    position: absolute;
+    top: -25px;
+    right: 10px;
+    min-width:85px;
+}
+.flex-left .beforeButton{
+    left: 0;
+}
+.flex-left .beforeButton::after{
+    content: "⮘ 前の記事";
+    position: absolute;
+    top: -25px;
+    left: 10px;
+    min-width:85px;
+}
+.flex-left .buttons{
+    position: absolute;
+    bottom: -130px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    gap: 10px;
+    max-width: 242px;
+}
+@media only screen and (max-width: 504px) {
+    .flex-left .bookData .book-top{
+        display: flex;
+        flex-direction: column;
+    }
+    .flex-left .bookData .book-top .book-img{
+        height: 300px;
+        object-fit: contain;
+        overflow: hidden;
+    }
+    .flex-left .bookData .book-menu {
+        padding: 10px;
+    }
+    .flex-left .bookData .book-menu .book-menu-title{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .flex-left .bookData .book-menu .book-menu-author {
+        font-size: 15px;
+    }
+    .flex-left .bookData .book-menu .book-menu-price {
+        font-size: 15px;
+    }
+    .flex-left .bookData .book-menu .book-menu-publisher {
+        font-size: 14px;
+    }
+    .flex-left .button-text{
+        display: none;
+    }
+    .flex-left .bookData .book-content{
+        margin-block: 30px;
+        padding-inline: 10px;
+    }
+}
+.amazon-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #84c225;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.amazon-button:hover {
+    background-color: #E68A00;
+}
+
+.amazon-logo {
+    width: 100px;
+    height: auto;
+    margin-right: 8px;
+}
+
+
+
+.flex-right{
+    max-width: 355px;
+    width: 355px;
+}
+.flex-right .title{
+    font-size: 18px;
+    font-weight: 700;
+    width: 100%;
+    padding-block: 8px;
+    border-radius: 20px;
+    background-color: var(--seeMore-button);
+    text-align: center;
+    color: white;
+}
+.flex-right .banner{
+    width: 100%;
+    object-fit: contain;
+    margin-block: 15px 60px;
+}
+.flex-right .otherCategory{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+    max-height: 180px;
+    height: 180px;
+}
+.flex-right .otherCategory .otherCategory-item{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: var(--seeMore-button);
+}
+.flex-right .otherCategory .otherCategory-item .otherCategory-item-img{
+    margin-inline: auto;
+    padding-top:10%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-color: var(--seeMore-button);
+}
+.flex-right .otherCategory .otherCategory-item .otherCategory-item-text{
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    padding-top: 10%;
+}
+.flex-right .allBooks{
+    margin-block: 30px;
+    padding: 20px;
+    width: 100%;
+    background-color: #ffffff;
+}
+.flex-right .allBooks .allBooks-title{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-black);
+    text-align: center;
+    width: 100%;
+    padding-block: 8px;
+    border-bottom: 2px solid #65C2E9;
+}
+.flex-right .allBooks .Book{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.flex-right .allBooks .Book .book-img{
+    max-width: 135px;
+    height: 85px;
+    overflow: hidden;
+}
+.flex-right .allBooks .Book .book-title{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-black);
+}
+
+
+
+
+
+
+@media only screen and (max-width: 801px) {
+    body{
+        padding-top: 148px;
+    }
+    .flex-right{
+        display: none;
+    }
+    .flex-left{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 504px) {
+    body{
+        padding-top: 63px;
+    }
+}

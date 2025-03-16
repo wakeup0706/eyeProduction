@@ -116,7 +116,7 @@ main .sns-content img:hover{
     margin-right: 10px;
 }
 .flex-left .now{
-    margin-block: 90px;
+    margin-block: 50px;
     font-size: 24px;
     color: var(--text-black);
     text-align: center;
@@ -129,6 +129,87 @@ main .sns-content img:hover{
     padding: 25px 55px;
     margin-top: 20px;
     text-align: left;
+}
+.flex-left .banner-under{
+    max-width: 400px;
+    height: 200px;
+    overflow: hidden;
+    margin-inline: auto;
+    border: 10px solid var(--seeMore-button);
+    border-radius: 40px 0 40px 0;
+}
+.flex-left .banner-under img{
+    width: 100%;
+    object-fit: cover;
+}
+.el-input__inner{
+    -webkit-appearance: none;
+    font-family: -apple-system, BlinkMacSystemFont, Hiragino Kaku Gothic ProN, Hiragino sans, Meiryo, sans-serif;
+    margin: 0;
+    outline: none;
+    tap-highlight-color: hsla(0, 0%, 100%, 0);
+    background: #fff;
+    border: 1px solid rgba(34, 36, 38, .15);
+    border-radius: .28571429rem;
+    box-shadow: inset 0 0 0 0 transparent;
+    color: rgba(0, 0, 0, .87);
+    font-size: 1em;
+    line-height: 1.21428571em;
+    padding: 5px 6px;
+    transition: color .1s ease, border-color .1s ease;
+}
+.ui.form input[type=text]{
+    vertical-align: top;
+    width: 100%;
+}
+.el-textarea__inner{
+    -webkit-appearance: none;
+    margin: 0;
+    tap-highlight-color: hsla(0, 0%, 100%, 0);
+    background: #fff;
+    border: 1px solid rgba(34, 36, 38, .15);
+    border-radius: .28571429rem;
+    box-shadow: inset 0 0 0 0 transparent;
+    color: rgba(0, 0, 0, .87);
+    font-size: 1em;
+    line-height: 1.2857;
+    outline: none;
+    padding: .78571429em 1em;
+    resize: vertical;
+    transition: color .1s ease, border-color .1s ease;
+    min-height: 42px;
+    vertical-align: top;
+}
+.now-content .flex{
+    margin-block: 10px;
+}
+.now-content .flex .gist{
+    width: 200px;
+}
+button{
+    width: 100px;
+    height: 40px;
+    background-color: var(--seeMore-button);
+    color: white;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+.now-content .check{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.flex-left .line-youtube{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-block: 70px;
 }
 
 .flex-right{
@@ -215,4 +296,8 @@ main .sns-content img:hover{
     .flex-left .infor .infor-content p{
         padding-left: 30px;
     }
+    .now-content .flex{
+        flex-direction: column;
+    }
+
 }
