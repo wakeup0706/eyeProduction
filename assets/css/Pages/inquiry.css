@@ -19,6 +19,7 @@ body{
     margin-inline: 6px;
     cursor: pointer;
 }
+
 /* SNS Content */
 main .sns-content{
     max-width: 185px;
@@ -81,6 +82,9 @@ main .sns-content img:hover{
 .nav-up{
     top: 0;
 }
+
+
+
 .flex-left .infor .infor-title{
     position: relative;
     font-size: 24px;
