@@ -141,43 +141,20 @@ main .sns-content img:hover{
 .nav-up{
     top: 0;
 }
-@media screen and (max-width: 504px){
-    .flex-left .title{
-        flex-direction: column;
-    }
-    .flex-left .title .text{
-        width: 100%;
-    }
-}
 
 .flex-left .releaseDate{
     padding-inline: 15px;
 }
-.flex-left .releaseDate .author{
+.flex-left .releaseDate .like{
     display: flex;
     align-items: center;
-    gap: 10px;
     float: left;
 }
-.flex-left .releaseDate .author .tag{
+.flex-left .releaseDate .like .tag{
     position: relative;
-    width: 48px;
-    height: 20px;
+    width: 112px;
 }
-.flex-left .releaseDate .author .tag img{
-    height: 100%;
-}
-.flex-left .releaseDate .author .tag::after{
-    content: "執筆者";
-    color: white;
-    position: absolute;
-    top: 1px;
-    left: 3px;
-    font-size: 12px;
-    font-weight: 500;
-    text-align: center;
-}
-.flex-left .releaseDate .author .name{
+.flex-left .releaseDate .like .name{
     font-size: 16px;
     font-weight: 700;
     color: var(--text-black);
@@ -191,7 +168,7 @@ main .sns-content img:hover{
     color: var(--text-black);
     margin-right: 30px;
 }
-.flex-left .releaseDate .openingDay{
+.flex-left .releaseDate .view{
     float: right;
     display: flex;
     top: 0;
@@ -201,95 +178,52 @@ main .sns-content img:hover{
     color: var(--text-black);
     margin-right: 30px;
 }
+.flex-left .releaseDate .view span{
+    font-size: 20px;
+}
 
 .flex-left .banner{
     width: 100%;
     object-fit: contain;
     aspect-ratio: 7 / 4;
-    margin-block: 40px;
+    margin-block: 10px;
 }
 .flex-left .banner img{
     height: 100%;
     object-fit: cover;
 }
 
-.flex-left .index{
-    border-block: 4px double var(--section-title-underline);
-    padding-block: 10px;
-}
-.flex-left .index .index-title{
-    font-size: 18px;
-    font-weight: 700;
-    padding: 7px 60px;
-    text-align: center;
+.flex-left .properties{
+    padding-inline: 30px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 8px;
-}
-.flex-left .index .index-title img{
-    width: auto;
-}
-.flex-left .index .index-content{
-    padding-inline: 90px;
-}
-.flex-left .index .index-content .index-item{
-    font-size: 16px;
-    font-weight: 700;
-    position: relative;
-    color: var(--text-black);
-    margin-block: 10px;
-}
-.flex-left .index .index-content .index-item a{
-    text-decoration: none;
-}
-.flex-left .index .index-content .index-item::before{
-    content: "»";
-    font-size: 35px;
-    position: absolute;
-    top: 7px;
-    left: -25px;
-    color: var(--section-title);
-    transform: translateY(-50%);
-}
-
-.flex-left .writer{
-    margin-block: 30px;
-    display: flex;
     gap: 10px;
-    max-width: 750px;
-    margin-inline: auto;
-    background-color: white;
-    border: 2px solid #D3D3D3;
-    padding: 15px;
+    margin-block: 15px;
+    justify-content: space-between;
 }
-.flex-left .writer .name-job .name{
-    font-size: 18px;
+.flex-left .properties .during{
+    font-size: 20px;
     font-weight: 700;
-    color: var(--text-black);
-    margin-bottom: 10px;
 }
-.flex-left .writer .name-job .name span{
-    padding: 2px 7px;
-    font-size: 12px;
-    font-weight: 700;
-    color: white;
-    background-color: black;
-    margin-right: 10px;
+.flex-left .properties .keep{
+    background-color: #d9d9d9;
+    padding: 12px 40px;
+    border-radius: 40px;
 }
-.flex-left .writer .name-job .job{
-    font-size: 14px;
-    font-weight: 500;
-    color: #555555;
+.flex-left .properties .keep .keepButton{
+    cursor: pointer;
 }
-.flex-left .writer .photo{
-    width: 100px;
-    height: 100px;
-    min-width: 100px;
+.flex-left .properties .like-dislike{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.flex-left .properties .like-dislike span{
+    cursor: pointer;
 }
 
 .flex-left .infor{
-    margin-top: 30px;
+    margin-top: 15px;
 }
 .flex-left .infor .infor-title{
     position: relative;
@@ -312,8 +246,9 @@ main .sns-content img:hover{
 }
 .flex-left .infor .infor-content{
     padding-inline: 25px;
+    margin-block: 20px 40px;
 }
-.flex-left .infor .infor-content p{
+.flex-left .infor .infor-content >p{
     margin-block: 18px;
     font-size: 16px;
     font-weight: 500;
@@ -322,8 +257,6 @@ main .sns-content img:hover{
 .flex-left .infor .infor-content a{
     color: #e39f00;
     text-decoration:underline;
-
-
 }
 .flex-left .infor .infor-content .image{
     max-width: 500px;
@@ -332,6 +265,22 @@ main .sns-content img:hover{
     margin-inline: auto;
     margin-bottom: 40px;
 }
+.flex-left .infor .infor-content .ingridient{
+    max-width: 610px;
+    margin-inline: auto;
+    padding-block: 8px;
+    border-block:1px solid #e0e0e0;
+}
+.flex-left .infor .infor-content ul li{
+    margin-block: 15px;
+}
+.flex-left .infor .infor-content ul li::marker{
+    color: var(--section-title-underline);
+}
+.flex-left .infor .infor-content ul li span{
+    font-weight: 700;
+}
+
 
 .flex-left .button-img{
     max-width: 80px;
@@ -351,7 +300,7 @@ main .sns-content img:hover{
     flex-direction: row-reverse;
 }
 .flex-left .nextButton::after{
-    content: "次の記事 ⮚";
+    content: "次のレシピ ⮚";
     position: absolute;
     top: -25px;
     right: 10px;
@@ -362,7 +311,7 @@ main .sns-content img:hover{
     left: 0;
 }
 .flex-left .beforeButton::after{
-    content: "⮘ 前の記事";
+    content: "⮘ 前のレシピ";
     position: absolute;
     top: -25px;
     left: 10px;
@@ -389,9 +338,6 @@ main .sns-content img:hover{
     .flex-left .bookData .book-content{
         margin-block: 30px;
         padding-inline: 10px;
-    }
-    .flex-left .infor .infor-title{
-        font-size: 20px;
     }
 }
 
