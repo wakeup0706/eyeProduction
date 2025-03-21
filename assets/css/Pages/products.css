@@ -21,6 +21,21 @@
     margin-inline: 6px;
     cursor: pointer;
 }
+.backgroundText{
+    font-size: 29px;
+    position: absolute;
+    font-weight: bold;
+    color: #80808063;
+    right: 0;
+    text-align: right;
+    top: 153px;
+}
+@media only screen and (max-width: 544px) {
+    .backgroundText{
+        font-size: 18px;
+        top: 140px;
+    }
+}
 .popularArticles .categoryName{
     position: relative;
     text-align: center;

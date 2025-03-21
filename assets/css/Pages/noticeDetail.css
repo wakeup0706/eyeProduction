@@ -80,6 +80,20 @@ body{
     margin-inline: 6px;
     cursor: pointer;
 }
+
+
+.kindleBooksDetail-content{
+    width: 100%;
+    gap:20px;
+}
+.flex-left{
+    position: relative;
+    max-width: 825px;
+    width: 80%;
+    background-image: linear-gradient(to bottom, #EDF2F6, #ffffff70, #ffffff70);
+    margin-bottom: 70px;
+}
+
 /* SNS Content */
 main .sns-content{
     max-width: 185px;
@@ -111,171 +125,146 @@ main .sns-content img{
 main .sns-content img:hover{
     filter: brightness(1.1);
 }
+.flex-left .title{
+    padding-inline: 15px;
+    padding-block: 3px;
+    border-bottom: 3px solid var(--section-title-underline);
+    margin-block: 20px 5px;
+}
+.flex-left .title .text{
+    max-width: 675px;
+    width: 675px;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text-black);
+}
 .nav-up{
     top: 0;
 }
-.kindleBooksDetail-content{
-    width: 100%;
-    gap:20px;
-}
-.flex-left{
-    position: relative;
-    max-width: 825px;
-    width: 80%;
-    background-color: #ffffff70;
-    margin-bottom: 75px;
-}
-.flex-left .bookData{
-    width: 100%;
-}
-.flex-left .bookData .book-top{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    align-items: center;
-}
-.flex-left .bookData .book-top .book-img img{
-    max-width: 300px;
-    height: 100%;
-}
-.flex-left .bookData .book-menu{
-    padding-left: 20px;
-    padding-top: 20%;
-}
-.flex-left .bookData .book-menu .book-menu-title{
-    font-size: 25px;
-    margin-bottom: 10px;
-}
-.flex-left .bookData .book-menu .book-menu-author{
-    font-size: 17px;
-    color: #555555;
-    margin-left: 20px;
-    margin-bottom: 10px;
-}
-.flex-left .bookData .book-menu .line{
-    content: "";
-    width: 100%;
-    height: 2px;
-    margin-bottom: 15px;
-    background-color: var(--seeMore-button);
-}
-.flex-left .bookData .book-menu .book-menu-price{
-    font-size: 20px;
-    margin-bottom: 30px;
-    color: #EE6354;
-}
-.flex-left .bookData .book-menu .book-menu-publisher{
-    font-size: 15px;
-    color: var(--text-black);
-}
-.flex-left .bookData .book-content{
-    max-width: 710px;
-    margin-inline: auto;
-    margin-block: 60px 35px;
-}
-.flex-left .button-img{
-    max-width:88px;
-    max-height: 100px;
-    object-fit: contain;
-    overflow: hidden;
-}
-.flex-left.button-text{
-    max-width:150px;
-    max-height: 100px;
-    color: var(--text-black);   
-    overflow: hidden;
-    font-size: 14px;
-}
-.flex-left .nextButton{
-    right: 0;
-    flex-direction: row-reverse;
-}
-.flex-left .nextButton::after{
-    content: "次の記事 ⮚";
-    position: absolute;
-    top: -25px;
-    right: 10px;
-    min-width:100px;
-}
-.flex-left .beforeButton{
-    left: 0;
-}
-.flex-left .beforeButton::after{
-    content: "⮘ 前の記事";
-    position: absolute;
-    top: -25px;
-    left: 10px;
-    min-width:100px;
-}
-.flex-left .buttons{
-    position: absolute;
-    bottom: -130px;
-    display: flex;
-    align-items: center;
-    background-color: #ffffff;
-    gap: 10px;
-    max-width: 242px;
-}
-@media only screen and (max-width: 504px) {
-    .flex-left .bookData .book-top{
-        display: flex;
+@media screen and (max-width: 504px){
+    .flex-left .title{
         flex-direction: column;
     }
-    .flex-left .bookData .book-top .book-img{
-        height: 300px;
-        object-fit: contain;
-        overflow: hidden;
+    .flex-left .title .text{
+        width: 100%;
     }
-    .flex-left .bookData .book-menu {
-        padding: 10px;
+}
+
+.flex-left .releaseDate{
+    padding-inline: 15px;
+}
+.flex-left .releaseDate .update{
+    float: right;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-black);
+    margin-right: 30px;
+}
+.flex-left .releaseDate .view{
+    float: right;
+    display: flex;
+    top: 0;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-black);
+    margin-right: 30px;
+}
+
+.flex-left .infor{
+    margin-block: 40px 80px;
+}
+.flex-left .infor .infor-content{
+    margin-block: 100px 40px;
+    max-width: 730px;
+    margin-inline: auto;
+}
+.flex-left .infor .infor-content >p{
+    margin-block: 18px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-black);
+}
+.flex-left .infor .infor-content .unit{
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.flex-left .infor .infor-content a{
+    color: #e39f00;
+    text-decoration:underline;
+}
+
+@media only screen and (max-width: 504px) {
+    .flex-left .infor .infor-title{
+        font-size: 20px;
     }
-    .flex-left .bookData .book-menu .book-menu-title{
+}
+/* seeMore Button responsive */
+.seeMoreButton{
+    height: 40px;
+    text-align: center;
+    margin-block: 45px;
+    position:relative;
+    z-index: 1;
+}
+.seeMoreButton a{
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #ffffff;
+}
+.seeMoreButton span{
+    position: absolute;
+    width: 230px;
+    height: 40px;
+    background-color: var(--seeMore-button);
+    border-radius: 30px;
+    transform: translateX(-50%);
+    padding-top: 5px;
+}
+.seeMoreButton span::after{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    right: 26px;
+    top: 50%;
+}
+@media only screen and (max-width: 768px) {
+    .seeMoreButton{
+        margin-block: 35px;
+    }
+    .seeMoreButton a{
         font-size: 18px;
-        margin-bottom: 10px;
+        font-weight: 500;
     }
-    .flex-left .bookData .book-menu .book-menu-author {
-        font-size: 15px;
+    .seeMoreButton span{
+        width: 210px;
+        height: 40px;
     }
-    .flex-left .bookData .book-menu .book-menu-price {
-        font-size: 15px;
+}
+@media only screen and (max-width: 485px) {
+    .seeMoreButton{
+        height:30px;
+        margin-block: 20px;
     }
-    .flex-left .bookData .book-menu .book-menu-publisher {
-        font-size: 14px;
+    .seeMoreButton a{
+        font-size: 16px;
     }
-    .flex-left .button-text{
+    .seeMoreButton span{
+        width: 140px;
+        height: 35px;
+        padding-top: 5px;       
+    }
+    .seeMoreButton span::after{
         display: none;
     }
-    .flex-left .bookData .book-content{
-        margin-block: 30px;
-        padding-inline: 10px;
-    }
 }
-.amazon-button {
-    display: inline-flex;
-    align-items: center;
-    background-color: #84c225;
-    color: #fff;
-    font-weight: bold;
-    font-size: 16px;
-    padding: 5px 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
-    margin-top: 10px;
-}
-
-.amazon-button:hover {
-    background-color: #E68A00;
-}
-
-.amazon-logo {
-    width: 100px;
-    height: auto;
-    margin-right: 8px;
-}
-
-
 
 .flex-right{
     max-width: 355px;
@@ -294,7 +283,7 @@ main .sns-content img:hover{
 .flex-right .banner{
     width: 100%;
     object-fit: contain;
-    margin-block: 15px 60px;
+    margin-block: 15px;
 }
 .flex-right .otherCategory{
     display: grid;
@@ -302,6 +291,7 @@ main .sns-content img:hover{
     gap: 10px;
     width: 100%;
     max-height: 180px;
+    margin-block: 40px;
     height: 180px;
 }
 .flex-right .otherCategory .otherCategory-item{
@@ -320,50 +310,64 @@ main .sns-content img:hover{
     background-color: var(--seeMore-button);
 }
 .flex-right .otherCategory .otherCategory-item .otherCategory-item-text{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     color: white;
     text-align: center;
     padding-top: 10%;
 }
-.flex-right .allBooks{
-    margin-block: 30px;
-    padding: 20px;
+
+
+.flex-right .searchBox{
+    margin-block: 10px;
+    padding-inline: 20px;
     width: 100%;
-    background-color: #ffffff;
 }
-.flex-right .allBooks .allBooks-title{
-    font-size: 18px;
-    font-weight: 700;
-    color: var(--text-black);
-    text-align: center;
+.flex-right .searchBox .search-Button{
     width: 100%;
-    padding-block: 8px;
-    border-bottom: 2px solid #65C2E9;
+    float: none;
 }
-.flex-right .allBooks .Book{
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.flex-right .searchBox .search-Button button{
+    width: 20%;
+    float: right;
+    padding: 6px;
+    margin-top: 5px;
+    background: var(--seeMore-button);
+    color: white;
+    font-size: 17px;
+    border: 0.5px solid #01B46d;
     cursor: pointer;
 }
-.flex-right .allBooks .Book .book-img{
-    max-width: 135px;
-    height: 85px;
-    overflow: hidden;
+
+.categoryTag{
+    margin-block: 30px;
 }
-.flex-right .allBooks .Book .book-title{
-    font-size: 14px;
-    font-weight: 500;
+.categoryTag p {
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 3px solid var(--seeMore-button);
+    padding: 0 0 10px;
+    margin-bottom: 16px;
+    text-align: center;
     color: var(--text-black);
 }
-
-
-
-
-
-
+.categoryTag div {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: .3em;
+    padding: 0;
+    margin: 0;
+}
+.categoryTag a {
+    color: #fff;
+    font-size: 13px;
+    background: var(--seeMore-button);
+    padding: .2em .7em;
+    margin: 4px 3px;
+    border-radius: 100vw;
+    font-weight: bold;
+    text-decoration: none;
+}
 @media only screen and (max-width: 801px) {
     body{
         padding-top: 148px;

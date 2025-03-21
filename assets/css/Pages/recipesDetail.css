@@ -141,7 +141,14 @@ main .sns-content img:hover{
 .nav-up{
     top: 0;
 }
-
+@media screen and (max-width: 504px){
+    .flex-left .title{
+        flex-direction: column;
+    }
+    .flex-left .title .text{
+        width: 100%;
+    }
+}
 .flex-left .releaseDate{
     padding-inline: 15px;
 }
@@ -304,7 +311,7 @@ main .sns-content img:hover{
     position: absolute;
     top: -25px;
     right: 10px;
-    min-width:85px;
+    min-width:100px;
 }
 
 .flex-left .beforeButton{
@@ -315,7 +322,7 @@ main .sns-content img:hover{
     position: absolute;
     top: -25px;
     left: 10px;
-    min-width:85px;
+    min-width:100px;
 }
 .flex-left .buttons{
     padding: 10px;
@@ -338,6 +345,9 @@ main .sns-content img:hover{
     .flex-left .bookData .book-content{
         margin-block: 30px;
         padding-inline: 10px;
+    }
+    .flex-left .infor .infor-title{
+        font-size: 20px;
     }
 }
 
@@ -528,8 +538,6 @@ main .sns-content img:hover{
     width: 40px;
     height: 40px;
 }
-
-
 
 @media only screen and (max-width: 801px) {
     body{
