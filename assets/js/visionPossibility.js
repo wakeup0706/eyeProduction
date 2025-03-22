@@ -31,7 +31,6 @@ let step = 1;
 function handleSubmit(event) {  
   let stepClass = `.step-${step}`;
   let stepElm = document.querySelector(stepClass);
-  console.log(stepClass)
   stepElm.classList.remove('visible__no-animation');
   indicator[step-1].classList.remove('active');
   stepElm.classList.add('slide-out');
@@ -81,7 +80,6 @@ let btn = document.getElementById("myBtn");
 let span = document.getElementsByClassName("close")[0];
 btn.onclick = function() {
   modal.style.display = "block";
-  console.log("adifakef");
 }
 span.onclick = function() {
   modal.style.display = "none";

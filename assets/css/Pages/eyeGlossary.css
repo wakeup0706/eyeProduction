@@ -60,6 +60,7 @@
     border-radius: 10px;
     overflow: hidden;
     width: 50%;
+    cursor: pointer;
 }
 .popularArticle .bestPopular .articleImg{
     width: 100%;
@@ -118,6 +119,7 @@
     max-width: 327px;
     box-shadow: 0 3px 3px #0000004a;
     overflow: hidden;
+    cursor: pointer;
 }
 .seeMore .seeMoreArticles .seeMoreArticle .articleImg{
     height: 55%;
@@ -238,6 +240,7 @@
     max-width: 340px;
     box-shadow: 0 3px 3px #0000004a;
     overflow: hidden;
+    cursor: pointer;
 }
 .allVisionArticles .seeMoreArticle .articleImg{
     height: 55%;

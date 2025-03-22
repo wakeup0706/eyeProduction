@@ -58,6 +58,7 @@
     margin-block: 10px;
     border-radius: 10px;
     overflow: hidden;
+    cursor: pointer;
     width: 50%;
 }
 .popularArticle .bestPopular .articleImg{
@@ -117,6 +118,7 @@
     max-width: 327px;
     box-shadow: 0 3px 3px #0000004a;
     overflow: hidden;
+    cursor: pointer;
 }
 .seeMore .seeMoreArticles .seeMoreArticle .articleImg{
     height: 55%;
@@ -263,6 +265,7 @@
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
     background-color: #FFFFFF;
+    cursor: pointer;
 }
 .vision_articles .content .contentDate{
     font-size: 16px;

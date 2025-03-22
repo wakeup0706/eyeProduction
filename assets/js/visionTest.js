@@ -15,7 +15,6 @@ let step = 1;
 function handleSubmit(event) {  
   let stepClass = `.step-${step}`;
   let stepElm = document.querySelector(stepClass);
-  console.log(stepClass)
   stepElm.classList.remove('visible__no-animation');
   indicator[step-1].classList.remove('active');
   stepElm.classList.add('slide-out');
@@ -47,9 +46,7 @@ const buttonBefore2 = document.querySelector('#button-before2');
 
 function handleSubmit2(event) {  
   let stepClass = `.step-${step}`;
-   console.log(stepClass,"/////////////stepClass");
   let stepElm = document.querySelector(stepClass);
-  console.log(stepElm,"/////////////stepElm");
   stepElm.classList.remove('visible__no-animation');
   indicator[step-1].classList.remove('active');
   stepElm.classList.remove('slide-in');
@@ -59,7 +56,6 @@ function handleSubmit2(event) {
     if (step < 1) {
       step = 1;
     }
-    console.log(step,"/////////////step");
     indicator[step-1].classList.add('active');
     stepClass = `.step-${step}`;
     stepElm = document.querySelector(stepClass);
