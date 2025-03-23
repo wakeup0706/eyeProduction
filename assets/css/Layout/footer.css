@@ -313,7 +313,7 @@ footer .floor {
 }
 .topButton{
     position: absolute;
-    top: 0;
+    top: 60px;
     right: 20px;
     background-color: #84C225;
     color: #FFFFFF;

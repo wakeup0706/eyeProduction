@@ -71,4 +71,18 @@ searchButton.addEventListener("click", (e) => {
   searchDropdown.classList.toggle("showDropdown");
 });
 
+// dorp to top button
+const toTopbtn = document.querySelector('#topButton');
 
+const scrollToTop = () => {
+  toTopbtn.addEventListener("click", () => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    }); 
+    console.log(event);
+  });
+};
+
+scrollToTop();
