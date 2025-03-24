@@ -15,6 +15,9 @@ img {
     width: 100%;
     height: auto;
 }
+div{
+    position: relative;
+}
 .container {
     max-width: 1200px;
     margin-inline: auto;

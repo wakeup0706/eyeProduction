@@ -74,6 +74,7 @@
     display: block;
     position: absolute;
     background: #ffffff54;
+    color: var(--text-black);
     height: 925px;
     width: 100%;
     box-shadow: 3px 2px 33px -19px rgba(0, 0, 0, 0.8);
@@ -269,10 +270,12 @@
 .visionTesting .content .description {
   font-size: 20px;
   font-weight: 500;
-  margin-block: 20px;
+  line-height: 2;
+  margin-block: 10px;
 }
 .visionTesting .content .description ul{
   font-size: 16px;
+  line-height: 1.5;
 }
 .visionTesting .content .visionTest-img1{
   display:block;
@@ -594,6 +597,7 @@ input::-moz-focus-inner {
   max-height: 215px;
   border-radius: 20px;
   padding: 15px 37px 26px 37px;
+  background-color: white;
   box-shadow: 0 4px 6px #00814D4a;
 }
 .result .result-title{

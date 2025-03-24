@@ -323,6 +323,7 @@ footer .floor {
     font-size: 16px;
     font-weight: 500;
     transition: all 0.3s ease;
+    z-index: 100;
 }
 .topButton:hover{
     background-color: #18AC38;

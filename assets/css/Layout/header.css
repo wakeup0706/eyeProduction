@@ -37,7 +37,6 @@ header .top-header .hamburger{
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 header .top-header .hamburger .circle{
-    top: 42px;
     width: 62px;
     height: 62px;
     border-radius: 50%;
@@ -121,6 +120,7 @@ header .top-header .sns-content.flex{
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    z-index: 10;
 }
 header .top-header .sns-content div{
     width: 31px;
@@ -158,7 +158,6 @@ header .top-header .sns-content img:hover{
     header .top-header .hamburger .circle{
         width: 58px;
         height: 58px;
-        top: 40px;
     }
 }
 
@@ -179,7 +178,6 @@ header .top-header .sns-content img:hover{
     header .top-header .hamburger .circle{
         width: 54px;
         height: 54px;
-        top: 38px;
     }
     header .top-header .sns-content{
         width: 165px;
@@ -212,7 +210,6 @@ header .top-header .sns-content img:hover{
     header .top-header .hamburger .circle{
         width: 48px;
         height: 48px;
-        top: 36px;
         left: 18px;
     }
     header .top-header .sns-content{
@@ -234,7 +231,6 @@ header .top-header .sns-content img:hover{
     header .top-header .hamburger .circle{
         width: 44px;
         height: 44px;
-        top: 58px;
         left: 12px;
     }
     header .top-header .logo-content .idea{
@@ -261,7 +257,6 @@ header .top-header .sns-content img:hover{
     header .top-header .hamburger .circle{
         width: 40px;
         height: 40px;
-        top: 52px;
     }
     header .top-header .hamburger{
         bottom: -50px;
@@ -306,7 +301,6 @@ header .top-header .sns-content img:hover{
     header .top-header .hamburger .circle{
         width: 38px;
         height: 38px;
-        top: 50px;
         left: 10px;
     }
     header .top-header .logo-content .logo{
@@ -339,7 +333,6 @@ header .top-header .sns-content img:hover{
     header .top-header .hamburger .circle{
         width: 36px;
         height: 36px;
-        top: 48px;
         left: 8px;
     }
     header .top-header .sns-content{
@@ -435,13 +428,18 @@ header .menu .menuButtons .menuButton:hover::after{
     display: none;
 }
 .nav-down .search-dropdown >div{ 
-    height: 45px;
+    height: 50px;
     width: 100%;
     background-color: #E6E6E6cf;
 }
 
 .nav-down .search-dropdown .latest-link{
     background-color: #D9D9D9cf;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.nav-down .search-dropdown .latest-link .container{
+    min-width: 432px;
 }
 .nav-down .search-dropdown .latest-link .latest-link-title{
     gap: 20px;
@@ -470,6 +468,7 @@ header .menu .menuButtons .menuButton:hover::after{
     border: 1px solid #0A6FC8;
     padding-inline: 5px;
     border-radius: 3px;
+    margin-top: -5px;
 }
 .nav-down .search-dropdown .latest-link p:hover::after{
     content: "";
@@ -485,7 +484,8 @@ header .menu .menuButtons .menuButton:hover::after{
     color: #323232;
 }
 .search-Button{
-    width: 490px;
+    max-width: 490px;
+    width: 100%;
     float: right;
 }
 .search-Button input[type=text] {
@@ -528,10 +528,15 @@ header .menu .menuButtons .menuButton:hover::after{
         margin-top: 10px;
         width: calc(100% / 3);
     }
+    .nav-down .search-dropdown .latest-link .latest-link-title{
+        font-size: 12px;
+    }
+
+
+
 }
 @media only screen and (max-width: 660px) {
     header .top-header .hamburger .circle{
-        top: 65px;
         width: 40px;
         height: 40px;
     }
@@ -621,16 +626,6 @@ header .menu .menuButtons .menuButton:hover::after{
     font-weight: 700;
     color: #323232;
 }
-.overlay{
-position: fixed;
-top: 211px;
-height: 1000vh;
-width: 200%;
-opacity: 0;
-pointer-events: none;
-transition: all 1s ease;
-background: #eeeeee82
-}
 .dark{
     opacity: 5;
     pointer-events: auto;
@@ -643,9 +638,6 @@ background: #eeeeee82
 @media screen and (max-width: 801px) {
     .sidebar{
         margin-top: 251px;
-    }
-    .overlay{
-        margin-top: 41px;
     }
 }
 @media screen and (max-width: 504px) {

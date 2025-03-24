@@ -55,6 +55,7 @@ main{
     max-width: 274px;
     max-height: 215px;
     border-radius: 20px;
+    background-color: white;
     padding: 15px 37px 26px 37px;
     box-shadow: 0 4px 6px #00814D4a;
 }
@@ -286,6 +287,9 @@ main{
     }
 }
 
+.articles .seeMore{
+    width: 100%;
+}
 .articles .seeMore .seeMoreTitle{
     position: relative;
     margin-left: 16px;
@@ -301,12 +305,11 @@ main{
     width: 100%;
     height: 1px;
     border-top: 1px solid #DDDDDD;
-    right: 0;
+    left: 90px;
     top: 50%;
 }
 .seeMore .seeMoreArticles{
     max-width: 1000px;
-    background-color: white;
     margin-inline: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ensures equal width */
@@ -1196,12 +1199,12 @@ border-bottom: 1px solid var(--border);
 
 /* line-youtube-registration content */
 .line-youtube-registration{
-    padding-block: 50px;
+    padding-block: 30px;
     background-color: #ffffff85;
 }
 .line-youtube-registration div{
     gap: 30px;
-    max-width: 800px;
+    max-width: 1000px;
     display: grid;
     justify-content: space-between;
     grid-auto-flow: column;
