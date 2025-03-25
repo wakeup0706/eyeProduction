@@ -10,6 +10,7 @@ html, body{
     margin: 0;
     background-color: #EDF2F6;
     z-index:initial;
+    transition: all 1s;
 }
 img {
     width: 100%;
@@ -142,7 +143,6 @@ main{
     right: -5%;
 }
 
-
 /* Article content */
 .popularArticles{
     position: relative;    
@@ -162,7 +162,7 @@ main{
     text-align: center;
     font-size: 32px;
     font-weight: 700;
-    margin-block: 50px 90px;
+    margin-block: 50px 50px;
     color: var(--text-black);
 }
 .popularTitle{
@@ -176,7 +176,6 @@ main{
 }
 
 @media only screen and (max-width: 610px) {
-
     .popularTitleIcon{
         position: relative;
         width: 50px;
@@ -188,7 +187,7 @@ main{
     position: relative;
     gap: 30px;
     padding-inline: 20px;
-    margin-block: 10px 140px;
+    margin-block: 10px 0px;
 }
 .popularArticle .bestPopular{
     background-color: #ffffff;
@@ -198,7 +197,7 @@ main{
     width: 35%;
     cursor: pointer;
 }
-.popularArticle .bestPopular .articleImg{
+.popularArticle .bestPopular img{
     width: 100%;
     overflow: hidden;
 }
@@ -245,20 +244,23 @@ main{
 .seeMore .seeMoreArticles{
     max-width: 1000px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ensures equal width */
+    grid-template-columns: repeat(auto-fit, minmax(183px, 1fr)); /* Ensures equal width */
     gap: 20px;
+    justify-items: center;
 }
 .seeMore .seeMoreArticles .seeMoreArticle{
     margin-block: 10px;
     border-radius:5px;
     max-width: 327px;
+    width: 100%;
     box-shadow: 0 3px 3px #0000004a;
     cursor: pointer;
     overflow: hidden;
     background-color: white;
 }
-.seeMore .seeMoreArticles .seeMoreArticle .articleImg{
+.seeMore .seeMoreArticles .seeMoreArticle img{
     height: 55%;
+    object-fit: cover;
     overflow: hidden;
 }
 
@@ -299,26 +301,44 @@ main{
     padding-left: 20px;
     padding-top: 5px;
 }
-
-@media only screen and (max-width: 797px) {
-    .seeMore{
-        width: 50%;
+@media only screen and (max-width: 1040px) {
+    .popularArticle .bestPopular .articleContent .articleType-mark, .seeMore .seeMoreArticles .seeMoreArticle .articleContent .articleType .articleType-mark{
+        display: none;
     }
 }
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 768px) {
+    .seeMore .seeMoreArticles .seeMoreArticle .articleContent .articleContent-text{
+        padding: 20px 20px;
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 725px) {
     .seeMore{
         width: 100%;
     }
     .popularArticle .bestPopular{
+        height: 385px;
         width: 100%;
+        align-items: center;
     }
     .popularArticle{
         flex-direction: column;
-        margin-block: 10px 80px;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .popularArticle .bestPopular img{
+        height: 50%;
+        object-fit: cover;
     }
 }
 @media only screen and (max-width: 486px) {
     .seeMore .seeMoreArticles .seeMoreArticle{
         height: 300px;
+    }
+}
+@media only screen and (max-width: 465px) {
+    .popularArticle .bestPopular{
+        height: 300px;
+        max-width: 327px;
     }
 }

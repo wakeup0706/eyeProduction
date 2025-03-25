@@ -10,7 +10,7 @@
 /*  all visionDictionary content */
 .allVision{
     position: relative;
-    padding-block: 0 280px;
+    padding-block: 140px 280px;
 }
 .visionDictionaryTitle{
     position: relative;
@@ -37,6 +37,11 @@
     .visionDictionaryIcon{
         width: 47px;
         top: -4px;
+    }
+}
+@media only screen and (max-width: 725px) {
+    .allVision{
+        padding-block: 105px 280px;
     }
 }
 @media only screen and (max-width: 797px) {
@@ -80,12 +85,19 @@
         padding: 10px 10px;
     }
 }
-  .vision_articles.active{
-    display: block;
-  }
-  .vision_articles{
-    display: none;
-  }
+@media only screen and (max-width: 704px) {
+    .navtabs .navtab {
+        font-size: 12px;
+    }
+}
+
+.vision_articles.active{
+display: block;
+}
+.vision_articles{
+display: none;
+}
+
 .allVisionArticles{
     display: none;
     margin-block: 10px;
@@ -93,12 +105,14 @@
     grid-template-columns: repeat(auto-fit, minmax(244px, 1fr)); /* Ensures equal width */
     gap: 20px;
     margin-inline: auto;
-    padding-inline: 70px;
+    padding-inline: 20px;
     margin-top: 35px;
+    justify-items: center;
 }
 .allVisionArticles .seeMoreArticle{
     border-radius:5px;
     max-width: 340px;
+    width: 100%;
     background-color: white;
     box-shadow: 0 3px 3px #0000004a;
     overflow: hidden;
@@ -195,13 +209,15 @@
     font-size: 20px;
     padding-left: 14px;
 }
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 600px) {
     .allVisionArticles{
-        padding-inline: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    }
+    .allVisionArticles .seeMoreArticle{
+        height: 350px;
     }
 }
 /* end all visionDictionary content */
-
 /* visionImproment content */
 .visionImproment{
     position: relative;
@@ -219,13 +235,13 @@
     max-width: 900px;
     margin-inline: auto;
     position: relative;
-    margin-top: -195px;
+    margin-top: -150px;
     gap: 10px;
 }
 .baners .baner{
     width: 400px;
-    max-height: 280px;
-    height: 280px;
+    max-height: 240px;
+    height: 240px;
     cursor: pointer;
 }
 .leftBaner{
@@ -233,7 +249,7 @@
     background-size: cover;
     background-position: center;
     left: 0;
-    border-radius: 0 150px 0 150px;
+    border-radius: 0 125px 0 125px;
     border: 10px solid #ffffff;
 }
 .rightBaner{
@@ -241,13 +257,13 @@
     background-size: cover;
     background-position: center;
     right: 0;
-    border-radius: 150px 0 150px 0;
+    border-radius: 125px 0 125px 0;
     border: 10px solid #ffffff;
 }
 
 @media screen and (max-width: 1200px) {
     .baners .baner{
-        height: 300px;
+        height: 240px;
     }
     .leftBaner, .rightBaner{
         border-width: 10px;
@@ -267,7 +283,7 @@
         gap: 15px;
     }
     .baners .baner{
-        height: 200px;
+        height: 180px;
     }
     .leftBaner{
         border-radius: 0 100px 0 100px;
@@ -290,7 +306,6 @@
     }
     .baners .baner{
         width: 90%;
-        height: 200px;
     }
     .leftBaner, .rightBaner{
         border-width: 10px;
@@ -298,7 +313,7 @@
     }
 }
 @media screen and (max-width: 380px) {
-    .visionImproment .backgroundImg{
+    .visionImproment .backgroundImg {
         height: 280px;
         margin-top: -282px;
     }
@@ -313,7 +328,7 @@
 
 /* endBanner content */
 .endBanner{
-    height: 700px;
+    /* height: 700px; */
     background-image: linear-gradient(var(--background), #ffffff);
 }
 /* end endBanner content */

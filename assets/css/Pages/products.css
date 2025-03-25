@@ -10,7 +10,7 @@
 /*  all visionDictionary content */
 .allVision{
     position: relative;
-    padding-block: 0 280px;
+    padding-block: 140px 280px;
 }
 .visionDictionaryTitle{
     position: relative;
@@ -21,6 +21,11 @@
     z-index: 1;
     top: -8px;
     left: 14px;
+}
+@media only screen and (max-width: 725px) {
+    .allVision{
+        padding-block: 105px 280px;
+    }
 }
 @media only screen and (max-width: 610px) {
     .visionDictionaryIcon{
@@ -36,13 +41,15 @@
     grid-template-columns: repeat(auto-fit, minmax(244px, 1fr)); /* Ensures equal width */
     gap: 25px;
     margin-inline: auto;
-    padding-inline: 70px;
+    padding-inline: 20px;
+    justify-items: center;
     margin-top: 35px;
 }
 .allVisionArticles .seeMoreArticle{
     border-radius:5px;
     max-width: 340px;
-    background-color: #FFFFFF5C;
+    width: 100%;
+    background-color: white;
     max-height: 320px;
     box-shadow: 0 3px 3px #0000004a;
     overflow: hidden;
@@ -82,7 +89,7 @@
     bottom: 0;
 }
 .allVisionArticles .articleContent .articleContent-text{
-    max-height: 65px;
+    max-height: 55px;
     padding: 4px 20px;
     font-size: 15px;
     color: var(--text-black);
@@ -257,7 +264,6 @@
 
 /* endBanner content */
 .endBanner{
-    height: 700px;
     background-image: linear-gradient(var(--background), #ffffff);
 }
 /* end endBanner content */

@@ -14,6 +14,7 @@ footer .footer-content{
     grid-template-columns: 1fr 2.2fr;
     gap: 40px;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 3;
 }
 
 /* Footer Left Content */
@@ -139,7 +140,6 @@ footer .footer-background img{
     display: block;
 }
 footer .floor{
-    height: 100px;
     background-color: #18AC38;
     margin-top: -8px;
 }
@@ -166,7 +166,7 @@ footer .floor {
 }
 
 @media screen and (max-width: 1000px) {
-    footer .container {
+    footer >.container {
         height: 197px;
     }
     footer .footer-content{
@@ -198,7 +198,7 @@ footer .floor {
 }
 
 @media screen and (max-width: 768px) {
-    footer .container {
+    footer >.container {
         height: 240px;
     }
     footer .footer-content{
@@ -232,12 +232,12 @@ footer .floor {
     }
 }
 @media screen and (max-width: 500px) {
-    footer .container {
+    footer >.container {
         height: 300px;
     }
 }
 @media screen and (max-width: 480px) {
-    footer .container {
+    footer >.container {
         height: 410px;
     }
     footer .footer-content{
@@ -323,7 +323,7 @@ footer .floor {
     font-size: 16px;
     font-weight: 500;
     transition: all 0.3s ease;
-    z-index: 100;
+    z-index: 80;
 }
 .topButton:hover{
     background-color: #18AC38;

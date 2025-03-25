@@ -9,7 +9,6 @@ main{
     overflow: hidden;
 }
 .first{
-    height: 700px;
     background-color: aquamarine;
 }
 /* testResult content */
@@ -50,6 +49,7 @@ main{
 .result{
     gap: 20px;
     margin-block: 35px 20px;
+    transition: all 1s;
 }
 .result >div{
     max-width: 274px;
@@ -109,65 +109,10 @@ main{
     gap: 40px;
     color: var(--section-title-underline);
 }
-@media only screen and (max-width: 930px) {
-    .result >div{
-        border-radius: 15px;
-        padding: 15px 15px 20px 15px;
-    }
-    .result .result-title{
-        font-size: 18px;
-    }
-    .result .eyes{
-        gap: 20px;
-    }
-    .result .eyes div{
-        width: 50px;
-        height: 30px;
-        font-size: 18px;
-        border-width: 6px 1px 1px 1px;
-        padding-top: 1px;
-    }
-    .result-value{
-        font-size: 18px;
-        gap: 20px;
-    }
+.result .result-title img{
+    width: 36px;
 }
-@media only screen and (max-width: 560px) {
-    .testResultIcon{
-        width: 40px;
-        top: -1px;
-    }
-    .testResultContent::before{
-        width: 400px;
-    }
-    .result{
-        gap: 20px;
-        margin-block: 40px 20px;
-        flex-direction: column;
-        align-items: center;
-    }
-    .result >div{
-        border-radius: 20px;
-        padding: 15px 37px 26px 37px;
-    }
-    .result .result-title{
-        font-size: 20px;
-    }
-    .result .eyes{
-        gap: 40px;
-    }
-    .result .eyes div{
-        width: 78px;
-        height: 49px;
-        font-size: 20px;
-        border-width: 8px 1px 1px 1px;
-        padding-top: 7px;
-    }
-    .result-value{
-        font-size: 18px;
-        gap: 20px;
-    }
-}
+
 .bg{
     position: absolute;
     opacity: 0.5;
@@ -257,7 +202,7 @@ main{
 }
 @media only screen and (max-width: 610px) {
     .articles {
-        padding-block: 10px;
+        padding-top: 70px;
     }
     .articleTitleIcon{
         position: relative;
@@ -314,6 +259,7 @@ main{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ensures equal width */
     gap: 20px;
+    justify-items: center;
 }
 .seeMore .seeMoreArticles .seeMoreArticle{
     border-radius:5px;
@@ -364,14 +310,33 @@ main{
     padding-top: 5px;
     padding-left: 20px;
 }
+@media only screen and (max-width: 874px) {
+    .seeMore .seeMoreArticles .seeMoreArticle{
+        height: 320px;
+    }
+}
+@media only screen and (max-width: 815px) {
+    .seeMore .seeMoreArticles .seeMoreArticle{
+        height: 310px;
+    }
+}
 @media only screen and (max-width: 770px) {
     .articles .seeMore .seeMoreTitle{
         padding-block: 10px;
     }
 }
 @media only screen and (max-width: 486px) {
+    .articles{
+        padding-top: 50px;
+    }
     .seeMore .seeMoreArticles .seeMoreArticle{
         height: 300px;
+    }
+}
+@media only screen and (max-width: 460px) {
+
+    .seeMore .seeMoreArticles .seeMoreArticle{
+        height: 400px;
     }
 }
 .vector3{
@@ -402,7 +367,7 @@ main{
 .seeMoreButton{
     height: 50px;
     text-align: center;
-    margin-block: 45px;
+    margin-top: 45px;
     position:relative;
     z-index: 1;
 }
@@ -433,7 +398,7 @@ main{
 }
 @media only screen and (max-width: 768px) {
     .seeMoreButton{
-        margin-block: 35px;
+        margin-top: 25px;
     }
     .seeMoreButton a{
         font-size: 18px;
@@ -447,7 +412,7 @@ main{
 @media only screen and (max-width: 485px) {
     .seeMoreButton{
         height:30px;
-        margin-block: 20px;
+        margin-top: 10px;
     }
     .seeMoreButton a{
         font-size: 16px;
@@ -480,6 +445,7 @@ main{
     height: 480px;
     margin-top: 40px;
 }
+
 @media only screen and (max-width: 768px) {
     .youtube .youtube-iframe{
         height: 300px;
@@ -530,6 +496,11 @@ main{
     background-image: linear-gradient(to right, var(--section-title-underline), var(--section-title-underline), #ffffff00);
     bottom: 0;
     left: 0;
+}
+@media only screen and (max-width: 1200px) {
+    .visionDictionary .inConteiner{
+        padding-inline: 0;
+    }
 }
 @media only screen and (max-width: 610px) {
     .visionDictionaryIcon{
@@ -707,7 +678,7 @@ main{
     max-width: 900px;
     margin-inline: auto;
     position: relative;
-    margin-top: -195px;
+    margin-top: -140px;
     gap: 10px;
 }
 .baners .baner{
@@ -734,10 +705,28 @@ main{
 
 @media screen and (max-width: 1200px) {
     .baners .baner{
-        height: 300px;
+        height: 230px;
     }
     .leftBaner, .rightBaner{
         border-width: 10px;
+    }
+    .leftBaner{
+        border-radius: 0 100px 0 100px;
+    }
+    .rightBaner{
+        border-radius: 100px 0 100px 0;
+    }
+}
+@media screen and (max-width: 924px) {
+    .baners {
+        max-width: 730px;
+    }
+    .baners .baner{
+        height: 196px;
+        width: 345px;
+    }
+    .eyeGlossary .vector11, .eyeProducts .vector7, .eyeProducts .vector8, .aboutHomework .vector2, .staffRecommended .vector1, .recipes .vector14{
+        display: none;
     }
 }
 
@@ -754,13 +743,13 @@ main{
         gap: 15px;
     }
     .baners .baner{
-        height: 200px;
+        height: 185px;
     }
     .leftBaner{
-        border-radius: 0 100px 0 100px;
+        border-radius: 0 85px 0 85px;
     }
     .rightBaner{
-        border-radius: 100px 0 100px 0;
+        border-radius: 85px 0 85px 0;
     }
 }
 
@@ -801,21 +790,21 @@ main{
 /* eyeGlossary content */
 .eyeGlossary{
     position: relative;
-    padding-block: 215px 40px;
+    padding-top: 215px;
 }
 @media screen and (max-width: 1200px) {
     .eyeGlossary{
-        padding-block: 200px;
+        padding-top: 200px;
+    }
+    .eyeGlossary .inConteiner{
+        padding-inline: 0;
     }
 }
-@media screen and (max-width: 768px) {
-    .eyeGlossary{
-        padding-block: 100px 40px;
-    }
-}
+
+
 @media screen and (max-width: 560px) {
     .eyeGlossary{
-        padding-block: 50px 30px;
+        padding-top: 50px;
     }
 }
 .eyeGlossaryTitle{
@@ -891,8 +880,13 @@ main{
 
 /* recipes content */
 .recipes{
-    padding-block: 40px;
+    padding-top: 110px;
     position: relative;
+}
+@media only screen and (max-width: 610px) {
+    .recipes .inConteiner{
+        padding-inline: 0;
+    }
 }
 .recipeIcon{
     position: relative;
@@ -964,7 +958,7 @@ main{
 /* eyeProducts content */
 .eyeProducts{
     position: relative;
-    padding-block: 40px;
+    padding-top: 110px;
 }
 .eyeProductsCareds{
     margin-block: 50px 40px;
@@ -1111,6 +1105,7 @@ border-bottom: 1px solid var(--border);
 
 /* aboutHomework content */
 .aboutHomework{
+    padding-top: 110px;
     position: relative;
 }
 .Homework-kindle{
@@ -1161,6 +1156,13 @@ border-bottom: 1px solid var(--border);
     top: 10%;
     right: 10%;
 }
+@media screen and (max-width: 768px){
+    .aboutHomework .content{
+        font-size: 16px;
+        margin: 25px auto 0 auto;
+        line-height: 25px;
+    }
+}
 @media screen and (max-width: 500px){
     .aboutHomework .content{
         font-size: 14px;
@@ -1201,6 +1203,7 @@ border-bottom: 1px solid var(--border);
 .line-youtube-registration{
     padding-block: 30px;
     background-color: #ffffff85;
+    margin-top: 50px;
 }
 .line-youtube-registration div{
     gap: 30px;
@@ -1224,7 +1227,7 @@ border-bottom: 1px solid var(--border);
 /* staffRecommended content  */
 .staffRecommended{
     position: relative;
-    padding-block: 20px;
+    padding-block: 50px;
 }
 .staffRecommendedTitle{
     margin-top: 40px;
@@ -1237,6 +1240,9 @@ border-bottom: 1px solid var(--border);
     width: 70px;
 }
 @media only screen and (max-width: 610px) {
+    .staffRecommended{
+        padding-top: 30px;
+    }
     .staffRecommendedIcon{
         width: 50px;
         top: -6px;
@@ -1318,15 +1324,24 @@ border-bottom: 1px solid var(--border);
         font-weight: 400;
         overflow: hidden;
     }
+    .staffRecommended .contents .content .contentText .contentTitle {
+        font-size: 10px;
+        padding: 1px 9px;
+        margin-bottom: 5px;
+    }
 }
 @media screen and (max-width: 450px){
     .staffRecommended .contents .content{
         margin-right: 0;
         border-radius: 3px;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
     }
     .staffRecommended .contents .content .contentNumber{
         display: none;
+    }
+    .staffRecommended .contents .content .contentText .contentText-content{
+        font-size: 13px;
+        height: 65%;
     }
 }
 /* end staffRecommended content */
@@ -1429,11 +1444,150 @@ border-bottom: 1px solid var(--border);
         grid-template-columns: 1fr;
     }
     .notice .notice-title{
-        display: block;
         font-size: 25px;
+        
+        display: flex;
+        gap: 10px;
+        margin-block: 15px;
+    }
+    .notice .notice-title img{
+        max-width: 30px;
+        max-height: 30px;
     }
     .notice .notice-content .notice-content-texts .notice-content-text{
         font-size: 14px;
     }
 }
 /* end notice content */
+
+
+/* common */
+@media only screen and (max-width: 930px){
+    .testResult{
+        padding-top: 80px;
+    }
+    .result{
+        margin-block: 15px 0px;
+        gap: 8px;
+    }
+    .result >div{
+        border-radius: 15px;
+        padding: 15px 15px 20px 15px;
+        width: 250px;
+    }
+    .result .result-title{
+        font-size: 18px;
+    }
+    .result .eyes{
+        gap: 20px;
+    }
+    .result .eyes div{
+        width: 80px;
+        height: 50px;
+        font-size: 30px;
+        border-width: 6px 1px 1px 1px;
+        padding-top: 1px;
+    }
+    .result-value{
+        font-size: 18px;
+        gap: 20px;
+    }
+
+    .articles{
+        padding-top: 80px;
+    }
+
+    .youtube{
+        padding-top: 80px;
+    }
+
+    .visionDictionary{
+        padding-top: 80px;
+    }
+
+    .eyeGlossary{
+        padding-top: 170px;
+    }
+
+    .recipes{
+        padding-top: 80px;
+    }
+
+    .eyeProducts{
+        padding-top: 80px;
+    }
+
+    .aboutHomework{
+        padding-top: 80px;
+    }
+}
+@media screen and (max-width: 769px) {
+    .eyeGlossary{
+        padding-top: 95px;
+    }
+    .aboutHomework{
+        padding-top: 60px;
+    }
+}
+@media only screen and (max-width: 680px) {
+    .result .result-title{
+        font-size: 16px;
+    }
+    .result .result-title img{
+        width: 24px;
+    }
+    .result .eyes div {
+        width: 60px;
+        height: 40px;
+        font-size: 22px;
+        border-width: 6px 1px 1px 1px;
+        padding-top: 1px;
+    }
+}
+@media only screen and (max-width: 560px) {
+    .testResult{
+        padding-top: 50px;
+    }
+    .testResultIcon{
+        width: 40px;
+        top: -1px;
+    }
+    .testResultContent::before{
+        width: 400px;
+    }
+    .result{
+        gap: 20px;
+        margin-block: 40px 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .result >div{
+        border-radius: 20px;
+        padding: 15px 37px 26px 37px;
+    }
+    .result .result-title{
+        font-size: 20px;
+    }
+    .result .eyes{
+        gap: 40px;
+    }
+    .result .eyes div{
+        width: 78px;
+        height: 49px;
+        font-size: 20px;
+        border-width: 8px 1px 1px 1px;
+        padding-top: 7px;
+    }
+    .result-value{
+        font-size: 18px;
+        gap: 20px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .staffRecommended{
+        padding-top: 30px;
+    }
+    .eyeGlossary{
+        padding-top: 70px;
+    }
+}

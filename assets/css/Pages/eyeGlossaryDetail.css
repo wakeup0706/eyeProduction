@@ -20,7 +20,6 @@ body{
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hamburger .circle{
-    top: 42px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -243,7 +242,7 @@ main .sns-content img:hover{
     max-width: 775px;
     margin-inline: auto;
     position: relative;
-    padding-block: 50px 80px;
+    padding-block: 50px 0px;
 }
 
 .byCategory{
@@ -305,6 +304,7 @@ main .sns-content img:hover{
     color: #21726A;
     margin-top: 30px;
     display: grid;
+    padding-inline: 20px;
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); /* Ensures equal width */
     gap: 10px;
     margin-inline: auto;
@@ -335,9 +335,6 @@ main .sns-content img:hover{
 @media only screen and (max-width: 783px) {
     .byInitial .categoryLists{
         grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-    }
-    .byInitial .categoryLists .row{
-        margin-inline: auto;
     }
 }
 @media only screen and (max-width: 401px) {
@@ -470,10 +467,12 @@ main .sns-content img:hover{
 }
 .flex-right .searchBox .search-Button{
     width: 100%;
+    display: flex;
     float: none;
 }
 .flex-right .searchBox .search-Button button{
     width: 20%;
+    min-width: 52px;
     float: right;
     padding: 6px;
     margin-top: 5px;
@@ -606,6 +605,31 @@ main .sns-content img:hover{
     }
     .flex-left{
         width: 100%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .flex-left .infor .infor-title{
+        font-size: 20px;
+    }
+    .flex-left .infor .infor-content{
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 514px) {
+    .flex-left .index .index-content{
+        padding-inline: 50px;
+    }
+    .flex-left .index .index-content .index-item{
+        font-size: 14px;
+    }
+    .flex-left .releaseDate .author{
+        gap: 5px;
+    }
+    .flex-left .releaseDate .author .name{
+        font-size: 14px;
+    }
+    .flex-left .writer .name-job .name{
+        font-size: 16px;
     }
 }
 @media only screen and (max-width: 504px) {

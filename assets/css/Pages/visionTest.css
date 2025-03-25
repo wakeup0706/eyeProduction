@@ -270,12 +270,30 @@
 .visionTesting .content .description {
   font-size: 20px;
   font-weight: 500;
-  line-height: 2;
-  margin-block: 10px;
+  line-height: 1.5;
+  margin-top: 15px;
 }
 .visionTesting .content .description ul{
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 2;
+}
+@media only screen and (max-width: 860px) {
+  .visionTesting .content .description {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 2;
+  }
+  .visionTesting .content .description ul{
+    font-size: 14px;
+    line-height: 2;
+  }
+}
+@media only screen and (max-width: 402px) {
+  .visionTesting .content .description {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+  }
 }
 .visionTesting .content .visionTest-img1{
   display:block;
@@ -305,6 +323,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 80px;
 }
 .range-slider .range-slider__input{
   position: relative;
@@ -713,6 +732,5 @@ input::-moz-focus-inner {
 }
 .sectionBack{
   position: absolute;
-  bottom: -527px;
-  min-width: 1000px;
+  bottom: -593px;
 }

@@ -14,7 +14,7 @@
 }
 .allVision{
     position: relative;
-    padding-block: 100px 280px;
+    padding-block: 120px 280px;
 }
 .noticeTitle{
     position: relative;
@@ -34,7 +34,7 @@
 .navtabs {
     display: flex;
     justify-content: center;
-    margin-block: 70px 20px;
+    margin-block: 35px 20px;
     position: relative;
 }
 .navtabs .navtab {
@@ -58,12 +58,30 @@
     background: var(--seeMore-button);
     transition: left 0.3s ease, width 0.3s ease;
 }
+@media only screen and (max-width: 730px) {
+    .navtabs{
+        margin-block: 30px 20px;
+    }
+    .navtabs .navtab {
+        padding: 10px 17px;
+    }
+}
 @media only screen and (max-width: 616px) {
     .allVision{
-        padding-block: 55px 280px;
+        padding-block: 100px 280px;
     }
     .navtabs{
         margin-block: 30px 20px;
+        font-size: 14px;
+    }
+    .navtabs .navtab {
+        padding: 10px 10px;
+    }
+}
+@media only screen and (max-width: 490px) {
+    .navtabs{
+        margin-block: 30px 20px;
+        font-size: 12px;
     }
     .navtabs .navtab {
         padding: 10px 10px;
@@ -105,16 +123,6 @@
     display: flex;
     align-items: center;
 }
-@media only screen and (max-width: 660px) {
-    .vision_articles .content{
-        grid-template-columns: 3fr 1fr 9fr;
-    }
-}
-@media only screen and (max-width: 450px) {
-    .vision_articles .content .contnetImage{
-        width: 80px;
-    }
-}
 .vision_articles .content .contentText{
     padding-right: 20px;
     font-size: 16px;
@@ -125,6 +133,19 @@
 }
 .vision_articles .vector2{
     right: -110px;
+}
+@media only screen and (max-width: 660px) {
+    .vision_articles .content{
+        grid-template-columns: 2fr 1fr 9fr;
+    }
+    .vision_articles .content .contentText{
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .vision_articles .content .contnetImage{
+        width: 80px;
+    }
 }
 @media screen and (max-width: 580px){
     .vision_articles .content .contentText{
@@ -150,7 +171,8 @@
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
     .vision_articles .content .contentDate{
-        display: none;
+        margin-top: -92px;
+        margin-left: 20px;
     }
 }
 /* end vision_articles content */
@@ -317,7 +339,6 @@
 
 /* endBanner content */
 .endBanner{
-    height: 700px;
     background-image: linear-gradient(var(--background), #ffffff);
 }
 /* end endBanner content */

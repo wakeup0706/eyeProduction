@@ -20,7 +20,6 @@ body{
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hamburger .circle{
-    top: 42px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -207,6 +206,7 @@ main .sns-content img:hover{
     gap: 10px;
     margin-block: 15px;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .flex-left .properties .during{
     font-size: 20px;
@@ -412,11 +412,13 @@ main .sns-content img:hover{
 }
 .flex-right .searchBox .search-Button{
     width: 100%;
+    display: flex;
     float: none;
 }
 .flex-right .searchBox .search-Button button{
     width: 20%;
     float: right;
+    min-width: 52px;
     padding: 6px;
     margin-top: 5px;
     background: var(--seeMore-button);
@@ -539,6 +541,11 @@ main .sns-content img:hover{
     height: 40px;
 }
 
+@media only screen and (max-width: 1165px) {
+    .flex-right .title{
+        font-size: 15px;
+    }
+}
 @media only screen and (max-width: 801px) {
     body{
         padding-top: 148px;
@@ -548,6 +555,70 @@ main .sns-content img:hover{
     }
     .flex-left{
         width: 100%;
+    }
+}
+@media only screen and (max-width: 786px) {
+    main .sns-content{
+        max-width: 160px;
+        gap: 5px;
+    }
+}
+@media only screen and (max-width: 680px) {
+    .flex-left .infor .infor-title{
+        font-size: 22px;
+    }
+    .flex-left .infor .infor-content .ingridient{
+        font-size: 14px;
+    }
+    .flex-left .properties .during{
+        font-size: 16px;
+    }
+    main .sns-content{
+        max-width: 130px;
+        gap: 3px;
+    }
+    .flex-left .properties .keep {
+        padding: 7px 22px;
+    }
+    .flex-left .properties .like-dislike span{
+        width: 40px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .flex-left .infor .infor-title{
+        font-size: 20px;
+    }
+    .flex-left .infor .infor-content{
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 530px) {
+    .flex-left .infor .infor-content{
+        font-size: 16px;
+    }
+    .flex-left .properties .keep{
+        font-size: 12px;
+        padding: 5px 15px;
+    }
+    .flex-left .properties .during {
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 514px) {
+    .flex-left .index .index-content{
+        padding-inline: 50px;
+    }
+    .flex-left .index .index-content .index-item{
+        font-size: 14px;
+    }
+    .flex-left .releaseDate .author{
+        gap: 5px;
+    }
+    .flex-left .releaseDate .author .name{
+        font-size: 14px;
+    }
+    .flex-left .writer .name-job .name{
+        font-size: 16px;
     }
 }
 @media only screen and (max-width: 504px) {

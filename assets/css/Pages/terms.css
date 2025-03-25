@@ -63,7 +63,6 @@ body{
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hamburger .circle{
-    top: 42px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -102,24 +101,6 @@ body{
 .hamburger .circle::before{
     top: 65%;
 }
-
-@media screen and (max-width: 1190px){
-    .paper{
-        border-radius: 5px;
-    }
-    .indent{
-        padding-left: 40px;
-    }
-}
-@media screen and (max-width: 504px){
-    .hamburger{
-        display: block;
-    }
-    .sidebar {
-        margin-top: 61px;
-        width: 100%;
-    }
-}
 .nav-up{
     top: 0;
 }
@@ -151,12 +132,70 @@ body{
 .bottom-space{
     margin-bottom: 40px;
 }
-@media screen and (max-width: 504px){
-    .middle-list{
-        font-size: 32px;
-        margin-block: 30px 20px;
+@media screen and (max-width: 1190px){
+    .paper{
+        border-radius: 5px;
     }
-    .privacy-title{
+    .indent{
+        padding-left: 40px;
+    }
+}
+@media screen and (max-width: 768px){
+    .subject{
+        font-size: 38px;
+        margin-bottom: 20px;
+    }
+    .row{
         font-size: 18px;
+        padding-block: 30px 25px;
+    }
+    .middle-list{
+        font-size: 28px;
+        margin-block: 40px 20px;
+    }
+    .privacy-title {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+@media screen and (max-width: 580px){
+    .subject{
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    .title-list-content {
+        font-size: 15px;
+        margin-top: 16px;
+        line-height: 26px;
+    }
+    .title {
+        margin-top: 22px;
+    }
+    .title-list {
+        font-size: 16px;
+        margin-top: 12px;
+        line-height: 26px;
+    }
+    .row {
+        font-size: 14px;
+        padding-block: 12px 10px;
+    }
+    .middle-list {
+        font-size: 24px;
+        margin-block: 16px 10px;
+    }
+    .privacy-title {
+        font-size: 16px;
+        line-height: 25px;
+        font-weight: 400;
+    }
+}
+@media screen and (max-width: 504px){
+    .hamburger{
+        display: block;
+    }
+    .sidebar {
+        margin-top: 61px;
+        width: 100%;
     }
 }

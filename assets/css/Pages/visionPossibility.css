@@ -227,7 +227,6 @@
 .sectionBack{
   position: absolute;
   bottom: -100px;
-  min-width: 1000px;
 }
 input[type=text], select {
   width: 100%;

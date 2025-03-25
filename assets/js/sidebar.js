@@ -45,9 +45,11 @@ menuBtns.forEach((menuBtn) => {
     e.stopPropagation();
     sidebar.classList.toggle("open");
     overlay.classList.toggle("dark");
-    $(window).scroll(function(event){
-      didScroll = didScroll ? false : true;
-  });
+    if(!didScroll){
+      $(window).scroll(function(event){
+        didScroll = false;
+      });
+    }
   });
 });
 
@@ -57,7 +59,7 @@ body.addEventListener("click", () => {
     overlay.classList.remove("dark");
     $(window).scroll(function(event){
       didScroll = true;
-  });
+    });
   }
 });
 

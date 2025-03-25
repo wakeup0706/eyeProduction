@@ -20,7 +20,6 @@ body{
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hamburger .circle{
-    top: 42px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -121,6 +120,7 @@ main .sns-content img:hover{
 .flex-left{
     position: relative;
     max-width: 825px;
+    padding: 20px;
     width: 80%;
     background-color: #ffffff70;
     margin-bottom: 75px;
@@ -215,6 +215,14 @@ main .sns-content img:hover{
     background-color: #ffffff;
     gap: 10px;
     max-width: 242px;
+}
+@media only screen and (max-width: 1047px) {
+    .flex-left .bookData .book-menu .book-menu-title{
+        font-size: 22px;
+    }
+    .flex-left .bookData .book-menu .book-menu-price{
+        font-size: 16px;
+    }
 }
 @media only screen and (max-width: 504px) {
     .flex-left .bookData .book-top{
