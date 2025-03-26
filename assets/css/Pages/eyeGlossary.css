@@ -318,7 +318,7 @@
     cursor: pointer;
 }
 .leftBaner{
-    background-image: url('../../img/land_banner1.png');
+    background-image: url('../../img/land_banner1.jpg');
     background-size: cover;
     background-position: center;
     left: 0;
@@ -326,7 +326,7 @@
     border: 10px solid #ffffff;
 }
 .rightBaner{
-    background-image: url('../../img/land_banner2.png');
+    background-image: url('../../img/land_banner2.jpg');
     background-size: cover;
     background-position: center;
     right: 0;

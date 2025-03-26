@@ -8,9 +8,6 @@
 main{
     overflow: hidden;
 }
-.first{
-    background-color: aquamarine;
-}
 /* testResult content */
 .testResult{
     padding-top: 110px;
@@ -148,6 +145,7 @@ main{
     margin-inline: auto;
     overflow: hidden;
     margin-block: 40px 26px;
+    cursor: pointer;
 }
 .bestLastArticle .baner{
     width: 55%;
@@ -387,14 +385,10 @@ main{
     padding-top: 10px;
 }
 .seeMoreButton span::after{
-    content: "";
+    content: "→";
     position: absolute;
-    width: 8px;
-    height: 8px;
-    background-color: #ffffff;
     border-radius: 50%;
     right: 26px;
-    top: 50%;
 }
 @media only screen and (max-width: 768px) {
     .seeMoreButton{
@@ -675,38 +669,35 @@ main{
     background-position: center;
 }
 .baners{
-    max-width: 900px;
+    max-width: 1090px;
     margin-inline: auto;
     position: relative;
     margin-top: -140px;
     gap: 10px;
 }
 .baners .baner{
-    width: 400px;
+    width: 510px;
     max-height: 280px;
     height: 280px;
 }
 .leftBaner{
-    background-image: url('../../img/land_banner1.png');
+    background-image: url('../../img/land_banner1.jpg');
     background-size: cover;
     background-position: center;
     left: 0;
-    border-radius: 0 150px 0 150px;
+    border-radius: 0 80px 0 80px;
     border: 10px solid #ffffff;
 }
 .rightBaner{
-    background-image: url('../../img/land_banner2.png');
+    background-image: url('../../img/land_banner2.jpg');
     background-size: cover;
     background-position: center;
     right: 0;
-    border-radius: 150px 0 150px 0;
+    border-radius: 80px 0 80px 0;
     border: 10px solid #ffffff;
 }
 
 @media screen and (max-width: 1200px) {
-    .baners .baner{
-        height: 230px;
-    }
     .leftBaner, .rightBaner{
         border-width: 10px;
     }
@@ -1170,7 +1161,6 @@ border-bottom: 1px solid var(--border);
         line-height: 25px;
     }
     .aboutHomework .banners{
-        grid-auto-flow: row;
         gap: 5px;
     }
 }

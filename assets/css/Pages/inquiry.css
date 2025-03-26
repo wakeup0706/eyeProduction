@@ -63,7 +63,7 @@ main .sns-content img:hover{
     margin-bottom: 40px;
 }
 .flex-left .title{
-    padding-block: 3px;
+    padding: 3px 15px;
     border-bottom: 3px solid var(--section-title-underline);
     margin-block: 20px;
 }
@@ -135,8 +135,8 @@ main .sns-content img:hover{
     text-align: left;
 }
 .flex-left .banner-under{
-    max-width: 400px;
-    height: 200px;
+    max-width: 410px;
+    height: 239px;
     overflow: hidden;
     margin-inline: auto;
     border: 10px solid var(--seeMore-button);

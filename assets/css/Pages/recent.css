@@ -10,96 +10,38 @@
 /*  all visionDictionary content */
 .allVision{
     position: relative;
-    padding-block: 140px 280px;
+    padding-block: 0px 280px;
 }
 .visionDictionaryTitle{
     position: relative;
 }
 .visionDictionaryIcon{
     position: relative;
-    width: 68px;
+    width: 60px;
     z-index: 1;
-    top: -10px;
+    top: -11px;
 }
-.allVision .sortButton{
-    position: absolute;
-    right: 0;
-    top: 0;
-    color: var(--text-black);
-    display: flex;
-    gap: 20px;
-    justify-content: flex-end;
-}
-.allVision .sortButton .selected{
-    cursor: pointer;
+.space{
+    height: 85px;
 }
 @media only screen and (max-width: 610px) {
     .visionDictionaryIcon{
-        width: 47px;
-        top: -4px;
+        width: 40px;
+        top: -2px;
     }
 }
-@media only screen and (max-width: 725px) {
-    .allVision{
-        padding-block: 105px 280px;
+@media only screen and (max-width: 801px) {
+    body{
+        padding-top: 252px;
     }
 }
-@media only screen and (max-width: 797px) {
-    .allVision .sortButton{
-        top: 55px;
-        color: var(--text-black);
-        gap: 10px;
-        font-size: 12px;
+@media only screen and (max-width: 504px) {
+    body{
+        padding-top: 152px;
     }
-}
-
-.navtabs {
-    display: flex;
-    justify-content: center;
-    margin-top: 70px;
-    position: relative;
-  }
-  .navtabs .navtab {
-    padding: 10px 30px;
-    cursor: pointer;
-    color: var(--text-black);
-    transition: color 0.3s;
-    border-bottom: 3px solid #96969696;
-  }
-  .navtabs .navtab:hover {
-    color: var( --section-title-underline);
-  }
-  .navtabs .navtab.active {
-    color: var( --section-title-underline);
-    font-weight: 600;
-  }
-  .navtabs .underline {
-    position: absolute;
-    bottom: 0;
-    height: 3px;
-    background: var(--seeMore-button);
-    transition: left 0.3s ease, width 0.3s ease;
-  }
-@media only screen and (max-width: 704px) {
-    .navtabs .navtab{
-        padding: 10px 10px;
-    }
-}
-@media only screen and (max-width: 704px) {
-    .navtabs .navtab {
-        font-size: 12px;
-    }
-}
-
-.vision_articles.active{
-display: block;
-}
-.vision_articles{
-display: none;
 }
 
 .allVisionArticles{
-    display: none;
     margin-block: 10px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(244px, 1fr)); /* Ensures equal width */
@@ -109,23 +51,29 @@ display: none;
     margin-top: 35px;
     justify-items: center;
 }
+
 .allVisionArticles .seeMoreArticle{
     border-radius:5px;
-    max-width: 340px;
+    max-width: 310px;
     width: 100%;
     background-color: white;
     box-shadow: 0 3px 3px #0000004a;
     overflow: hidden;
     cursor: pointer;
 }
-.allVisionArticles .seeMoreArticle .articleImg{
-    height: 55%;
-    overflow: hidden;
+@media only screen and (max-width: 600px) {
+    .allVisionArticles .seeMoreArticle{
+        height: 350px;
+    }
+    .allVisionArticles{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    }
 }
-.allVisionArticles .seeMoreArticle .articleImg img{
-    height: 100%;
+.allVisionArticles .seeMoreArticle img{
+    height: 55%;
     object-fit: cover;
 }
+
 .allVisionArticles .articleContent{
     position: relative;
     max-height: 25px;
@@ -154,7 +102,7 @@ display: none;
 }
 .allVisionArticles .articleContent .articleContent-text{
     max-height: 150px;
-    padding: 20px;
+    padding: 10px 20px;
     font-size: 16px;
     overflow: hidden;
 }
@@ -162,6 +110,7 @@ display: none;
     color: #888888;
     font-size: 14px;
     padding-left: 20px;
+    padding-top: 5px;
 }
 .allVision .pagenation{
     width: fit-content;
@@ -209,15 +158,8 @@ display: none;
     font-size: 20px;
     padding-left: 14px;
 }
-@media only screen and (max-width: 600px) {
-    .allVisionArticles{
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
-    }
-    .allVisionArticles .seeMoreArticle{
-        height: 350px;
-    }
-}
 /* end all visionDictionary content */
+
 /* visionImproment content */
 .visionImproment{
     position: relative;

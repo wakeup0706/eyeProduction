@@ -52,12 +52,19 @@ body{
     font-weight: 400;
     margin-top: 40px;
 }
+/*  */
+
+.menu .container{
+    padding-inline: 70px;
+}
+
+
 /* Hamburger Menu */
 .hamburger{
-    display: none;
     position: absolute;
-    left: 25px;
-    bottom:5px;
+    left: 4px;
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 2;
     cursor: pointer;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -104,8 +111,31 @@ body{
 .nav-up{
     top: 0;
 }
+.sidebar{
+    margin-top: 92px;
+    height: calc(100vh - 88px);
+}
+.overlay{
+    top: 92px;
+}
+@media screen and (max-width: 853px){
+    .sidebar{
+        margin-top: 110px;
+    }
+    .overlay{
+        top: 110px;
+    }
+}
+@media screen and (max-width: 801px){
+    .sidebar{
+        margin-top: 144px;
+    }
+    .overlay{
+        top: 144px;
+    }
+}
 
-/* transaction */
+/* terms */
 .row{
     display: grid;
     grid-template-columns: 3fr 7fr;
@@ -117,7 +147,7 @@ body{
     margin-inline: auto;
 }
 
-/* privacyPolicy */
+/* privacy */
 .middle-list{
     font-size: 36px;
     font-weight: 500;
@@ -192,7 +222,8 @@ body{
 }
 @media screen and (max-width: 504px){
     .hamburger{
-        display: block;
+        top: 20px;
+        left: 40px;
     }
     .sidebar {
         margin-top: 61px;

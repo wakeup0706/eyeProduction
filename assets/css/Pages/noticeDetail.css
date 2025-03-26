@@ -225,14 +225,11 @@ main .sns-content img:hover{
     padding-top: 5px;
 }
 .seeMoreButton span::after{
-    content: "";
+    content: "→";
     position: absolute;
-    width: 8px;
-    height: 8px;
-    background-color: #ffffff;
+    color: #ffffff;
     border-radius: 50%;
     right: 26px;
-    top: 50%;
 }
 @media only screen and (max-width: 768px) {
     .seeMoreButton{

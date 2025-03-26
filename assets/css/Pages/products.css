@@ -180,7 +180,7 @@
     cursor: pointer;
 }
 .leftBaner{
-    background-image: url('../../img/land_banner1.png');
+    background-image: url('../../img/land_banner1.jpg');
     background-size: cover;
     background-position: center;
     left: 0;
@@ -188,7 +188,7 @@
     border: 10px solid #ffffff;
 }
 .rightBaner{
-    background-image: url('../../img/land_banner2.png');
+    background-image: url('../../img/land_banner2.jpg');
     background-size: cover;
     background-position: center;
     right: 0;
@@ -267,3 +267,58 @@
     background-image: linear-gradient(var(--background), #ffffff);
 }
 /* end endBanner content */
+
+.fromShop{
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    color: #bdbdbd;
+    top: 150px;
+    right: 0;
+    width: 565px;
+}
+@media screen and (max-width: 1070px) {
+    .fromShop{
+        font-size: 26px;
+        top: 176px;
+        width: 481px;
+    }
+}
+@media screen and (max-width: 960px) {
+    .fromShop{
+        font-size: 20px;
+        top: 190px;
+        width: 365px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .fromShop{
+        font-size: 17px;
+        top: 208px;
+        width: 308px;
+    }
+}
+@media screen and (max-width: 725px) {
+    .fromShop{
+        font-size: 17px;
+        top: 223px;
+        width: 594px;
+    }
+}
+@media screen and (max-width: 610px) {
+    .fromShop{
+        font-size: 14px;
+        top: 212px;
+        width: 490px;
+    }
+}
+@media screen and (max-width: 504px) {
+    .popularArticle .bestPopular{
+        margin-top: 30px;
+    }
+    .fromShop{
+        font-size: 14px;
+        top: 212px;
+        width: 350px;
+    }
+}

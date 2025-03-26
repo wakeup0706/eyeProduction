@@ -193,7 +193,7 @@ main .sns-content img:hover{
     width: 100%;
     object-fit: contain;
     aspect-ratio: 7 / 4;
-    margin-block: 10px;
+    margin-block: 36px;
 }
 .flex-left .banner img{
     height: 100%;
@@ -201,12 +201,7 @@ main .sns-content img:hover{
 }
 
 .flex-left .properties{
-    padding-inline: 30px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-block: 15px;
-    flex-direction: row-reverse;
+    float: right;
 }
 .flex-left .properties .like-dislike{
     display: flex;
@@ -215,6 +210,7 @@ main .sns-content img:hover{
 }
 .flex-left .properties .like-dislike span{
     cursor: pointer;
+    max-width: 30px;
 }
 
 .flex-left .infor{
@@ -238,11 +234,17 @@ main .sns-content img:hover{
 }
 
 /* searchByCategory content */
+.flex-left .searchBox{
+    width: 100%;
+}
+.flex-left .searchBox .search-Button{
+    float: none;
+    margin-inline: auto;
+}
 .searchByCategory{
     max-width: 775px;
     margin-inline: auto;
     position: relative;
-    padding-block: 50px 0px;
 }
 
 .byCategory{
