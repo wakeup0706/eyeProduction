@@ -193,6 +193,7 @@ main{
     background-color: #ffffff;
     margin-block: 10px;
     border-radius: 10px;
+    max-height: 600px;
     overflow: hidden;
     width: 35%;
     cursor: pointer;
@@ -252,6 +253,7 @@ main{
     margin-block: 10px;
     border-radius:5px;
     max-width: 327px;
+    max-height: 375px;
     width: 100%;
     box-shadow: 0 3px 3px #0000004a;
     cursor: pointer;
