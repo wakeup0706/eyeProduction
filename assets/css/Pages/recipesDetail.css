@@ -6,69 +6,6 @@
     --text-black: #323232;
     --background: #EDF2F6;
 }
-body{
-    padding-top: 95px;
-}
-/* Hamburger Menu */
-.hamburger{
-    display: none;
-    position: absolute;
-    left: 25px;
-    bottom:5px;
-    z-index: 2;
-    cursor: pointer;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.hamburger .circle{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: white;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-.hamburger .circle:hover{
-    transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-.hamburger .circle div{
-    width: 50%;
-    height: 2px;
-    background-color: #84C225;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.hamburger .circle::after,
-.hamburger .circle::before{
-    content: "";
-    width: 50%;
-    height: 2px;
-    background-color: #84C225;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.hamburger .circle::after{
-    top: 35%;
-}
-.hamburger .circle::before{
-    top: 65%;
-}
-@media screen and (max-width: 504px){
-    .hamburger{
-        display: block;
-    }
-    .sidebar {
-        margin-top: 61px;
-        width: 100%;
-    }
-}
-
-
 .breadcrumb{
     position: relative;
     font-size: 14px;
@@ -79,18 +16,9 @@ body{
     margin-inline: 6px;
     cursor: pointer;
 }
-
-
 .kindleBooksDetail-content{
     width: 100%;
     gap:20px;
-}
-.flex-left{
-    position: relative;
-    max-width: 825px;
-    width: 80%;
-    background-image: linear-gradient(to bottom, #EDF2F6, #ffffff70, #ffffff70);
-    margin-bottom: 170px;
 }
 
 /* SNS Content */
@@ -140,14 +68,6 @@ main .sns-content img:hover{
 .nav-up{
     top: 0;
 }
-@media screen and (max-width: 504px){
-    .flex-left .title{
-        flex-direction: column;
-    }
-    .flex-left .title .text{
-        width: 100%;
-    }
-}
 .flex-left .releaseDate{
     padding-inline: 15px;
 }
@@ -182,7 +102,6 @@ main .sns-content img:hover{
     font-size: 14px;
     font-weight: 700;
     color: var(--text-black);
-    margin-right: 30px;
 }
 .flex-left .releaseDate .view span{
     font-size: 20px;
@@ -218,14 +137,6 @@ main .sns-content img:hover{
     border-radius: 40px;
 }
 .flex-left .properties .keep .keepButton{
-    cursor: pointer;
-}
-.flex-left .properties .like-dislike{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.flex-left .properties .like-dislike span{
     cursor: pointer;
 }
 
@@ -287,7 +198,9 @@ main .sns-content img:hover{
 .flex-left .infor .infor-content ul li span{
     font-weight: 700;
 }
-
+.like-button {
+    font-size: 48px;
+}
 
 .flex-left .button-img{
     max-width: 80px;
@@ -324,39 +237,27 @@ main .sns-content img:hover{
     left: 10px;
     min-width:100px;
 }
+.flex-left .under-button{
+    padding: 10px;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+}
 .flex-left .buttons{
     padding: 10px;
-    position: absolute;
-    bottom: -130px;
     display: flex;
     align-items: center;
     background-color: #ffffff;
     gap: 10px;
-    max-width: 242px;
+    width: 242px;
 }
 .flex-left .buttons .button-text{
     max-height: 70px;
     overflow: hidden;
 }
-@media only screen and (max-width: 504px) {
-    .flex-left .button-text{
-        display: none;
-    }
-    .flex-left .bookData .book-content{
-        margin-block: 30px;
-        padding-inline: 10px;
-    }
-    .flex-left .infor .infor-title{
-        font-size: 20px;
-    }
-}
 
-
-
-.flex-right{
-    max-width: 355px;
-    width: 355px;
-}
 .flex-right .title{
     font-size: 18px;
     font-weight: 700;
@@ -546,17 +447,6 @@ main .sns-content img:hover{
         font-size: 15px;
     }
 }
-@media only screen and (max-width: 801px) {
-    body{
-        padding-top: 148px;
-    }
-    .flex-right{
-        display: none;
-    }
-    .flex-left{
-        width: 100%;
-    }
-}
 @media only screen and (max-width: 786px) {
     main .sns-content{
         max-width: 160px;
@@ -580,8 +470,8 @@ main .sns-content img:hover{
     .flex-left .properties .keep {
         padding: 7px 22px;
     }
-    .flex-left .properties .like-dislike span{
-        width: 40px;
+    .like-button {
+        font-size: 40px;
     }
 }
 @media only screen and (max-width: 600px) {
@@ -590,6 +480,14 @@ main .sns-content img:hover{
     }
     .flex-left .infor .infor-content{
         font-size: 18px;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .flex-left .button-text{
+        display: none;
+    }
+    .flex-left .buttons{
+        width: auto;
     }
 }
 @media only screen and (max-width: 530px) {
@@ -621,8 +519,35 @@ main .sns-content img:hover{
         font-size: 16px;
     }
 }
-@media only screen and (max-width: 504px) {
-    body{
-        padding-top: 63px;
+@media screen and (max-width: 504px){
+    .flex-left .title{
+        flex-direction: column;
+    }
+    .flex-left .title .text{
+        width: 100%;
+    }
+    .flex-left .bookData .book-content{
+        margin-block: 30px;
+        padding-inline: 10px;
+    }
+    .flex-left .infor .infor-title{
+        font-size: 20px;
+    }
+    .flex-left .releaseDate .like{
+        margin-top: 5px;
+    }
+    .flex-left .releaseDate .like .tag{
+        position: relative;
+        width: 98px;
+        font-size: 14px;
+    }
+    .flex-left .releaseDate .like .name{
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 379px) {
+    .flex-left .properties{
+        padding-inline: 0px;
+        margin-block: 0px;
     }
 }

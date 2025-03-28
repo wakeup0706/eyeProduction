@@ -172,11 +172,11 @@ footer .floor {
     footer .footer-content{
         grid-template-columns: 1fr;
         gap: 40px;
-        left: 15%;
+        left: 23%;
         transform: translateX(-50px);
     }
     footer .footer-content-left{
-        min-width: unset;
+        min-width: max-content;
         align-items: center;
         text-align: center;
     }
@@ -243,7 +243,7 @@ footer .floor {
     footer .footer-content{
         padding: 30px 0;
         gap: 0;
-        left: 25%;
+        left: 30%;
     }
     footer .footer-content-left .logo{
         max-width: 240px;
@@ -265,8 +265,8 @@ footer .floor {
         height: 26px;
     }
     footer .footer-content-right ul{
-        gap: 12px 20px;
-        flex-direction: column;
+        gap: 12px 30px;
+        justify-content: space-between;
     }
     footer .footer-content-right ul li a{
         font-size: 14px;
@@ -298,11 +298,6 @@ footer .floor {
     footer .sns-content div{
         width: 24px;
         height: 24px;
-    }
-    footer .footer-content-right ul{
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
     }
     footer .footer-content-right ul li a{
         font-size: 13px;

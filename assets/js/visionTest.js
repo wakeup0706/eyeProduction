@@ -40,10 +40,20 @@ button6.addEventListener('click', handleSubmit);
 button7.addEventListener('click', handleSubmit);
 button8.addEventListener('click', handleSubmit);
 button9.addEventListener('click', handleSubmit);
+button1.addEventListener('click', ()=>{
+  let title = document.querySelector(".categoryName");
+  title.classList.remove("show");
+  title.classList.add("show-none");
+});
 
 const buttonBefore = document.querySelector('#button-before');
 const buttonBefore2 = document.querySelector('#button-before2');
 
+buttonBefore.addEventListener('click', ()=>{
+  let title = document.querySelector(".categoryName");
+  title.classList.add("show");
+  title.classList.remove("show-none");
+});
 function handleSubmit2(event) {  
   let stepClass = `.step-${step}`;
   let stepElm = document.querySelector(stepClass);

@@ -45,15 +45,6 @@ a{
 .space-center {
     justify-content: center;
 }
-@media only screen and (max-width: 1200px) {
-    .container {
-      margin-inline: 30px;
-    }
-    .inConteiner{
-        padding-inline: 20px;
-    }
-}
-
 .section-title{
     position: absolute;
     width: 400px;
@@ -77,21 +68,6 @@ a{
 }
 .text-top{
     margin-top: 7px;
-}
-@media only screen and (max-width: 610px) {
-    .section-title{
-        width: 300px;
-        height: 38px;
-        font-size: 20px;
-        left: 36px;
-        top: 0;
-        padding-left: 30px;
-    }
-    .section-title::before{
-        width: 300px;
-        bottom: 0;
-        left: 0;
-    }
 }
 main{
     overflow: hidden;
@@ -175,105 +151,39 @@ main{
     top: -20px;
 }
 
-@media only screen and (max-width: 610px) {
-    .popularTitleIcon{
-        position: relative;
-        width: 50px;
-        top: -12px;
-    }
-}
 .popularArticle{
-    flex-direction: row-reverse;
     position: relative;
     gap: 30px;
     padding-inline: 20px;
-    margin-block: 10px 0px;
-}
-.popularArticle .bestPopular{
-    background-color: #ffffff;
-    margin-block: 10px;
-    border-radius: 10px;
-    max-height: 600px;
-    overflow: hidden;
-    width: 35%;
-    cursor: pointer;
-}
-.popularArticle .bestPopular img{
-    width: 100%;
-    overflow: hidden;
-}
-.popularArticle .bestPopular .articleContent{
-    position: relative;
-    height: 50%;
-    padding: 5%;
-}
-.popularArticle .bestPopular .articleContent .articleType-text{
-    font-size: 16px;
-    color: #FFFFFF;
-    border: 1px solid var(--card-type);
-    background-color: var(--card-type);
-    width: max-content;
-    top: -15px;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    padding-inline: 10px;
-}
-.popularArticle .bestPopular .articleContent .articleType-mark{
-    max-width: 30px;
-    max-height: 30px;
-    position: absolute;
-    right: 26px;
-    top: -17px;
-}
-.popularArticle .bestPopular .articleContent .articleContent-text{
-    margin-top: 3%;
-    font-size: 18px;
-    font-weight: 500;
-    color: var(--text-black);
-    overflow: hidden;
-}
-.popularArticle .bestPopular .articleContent .articleDate{
-    position: absolute;
-    color: #888888;
-    font-size: 14px;
-    bottom: 15px;
-}
-.seeMore{
-    width: 60%;
-}
-.seeMore .seeMoreArticles{
-    max-width: 1000px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(183px, 1fr)); /* Ensures equal width */
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(236px, 1fr));
     justify-items: center;
 }
-.seeMore .seeMoreArticles .seeMoreArticle{
-    margin-block: 10px;
+.popularArticle .seeMoreArticle{
     border-radius:5px;
     max-width: 327px;
     max-height: 375px;
+    aspect-ratio: 1 / 1.2;
     width: 100%;
     box-shadow: 0 3px 3px #0000004a;
     cursor: pointer;
     overflow: hidden;
     background-color: white;
 }
-.seeMore .seeMoreArticles .seeMoreArticle img{
+.popularArticle .seeMoreArticle img{
     height: 55%;
     object-fit: cover;
     overflow: hidden;
 }
 
-.seeMore .seeMoreArticles .seeMoreArticle .articleContent{
+.popularArticle .seeMoreArticle .articleContent{
     position: relative;
 }
-.seeMore .seeMoreArticles .seeMoreArticle .articleContent .articleType{
+.popularArticle .seeMoreArticle .articleContent .articleType{
     margin-top: -10px;
     position: relative;
 }
-.seeMore .seeMoreArticles .seeMoreArticle .articleContent .articleType .articleType-text {
+.popularArticle .seeMoreArticle .articleContent .articleType .articleType-text {
     max-width: 180px;
     width: fit-content;
     margin-inline: auto;
@@ -284,32 +194,68 @@ main{
     border: 1px solid var(--card-type);
 }
 
-.seeMore .seeMoreArticles .seeMoreArticle .articleContent .articleType .articleType-mark{
+.popularArticle .seeMoreArticle .articleContent .articleType .articleType-mark{
     max-width: 28px;
     max-height: 28px;
     position: absolute;
     right: 13px;
     bottom: 0;
 }
-.seeMore .seeMoreArticles .seeMoreArticle .articleContent .articleContent-text{
+.popularArticle .seeMoreArticle .articleContent .articleContent-text{
     max-height: 150px;
     padding: 20px 20px;
     font-size: 16px;
     overflow: hidden;
 }
-.seeMore .seeMoreArticles .seeMoreArticle .articleContent .articleContent-date{
+.popularArticle .seeMoreArticle .articleContent .articleContent-date{
     color: #888888;
     font-size: 14px;
     padding-left: 20px;
     padding-top: 5px;
 }
-@media only screen and (max-width: 1040px) {
-    .popularArticle .bestPopular .articleContent .articleType-mark, .seeMore .seeMoreArticles .seeMoreArticle .articleContent .articleType .articleType-mark{
+
+.flex-left{
+    position: relative;
+    max-width: 825px;
+    width: 75%;
+    background-image: linear-gradient(to bottom, #EDF2F6, #ffffff70, #ffffff70);
+    margin-bottom: 20px;
+}
+.flex-right{
+    max-width: 355px;
+    width: 100%;
+    min-width: 195px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .container {
+      margin-inline: 30px;
+    }
+    .inConteiner{
+        padding-inline: 20px;
+    }
+}
+@media only screen and (max-width: 847px) {
+    .popularArticle >div:nth-child(5),.popularArticle >div:nth-child(6),.popularArticle >div:nth-child(7),.popularArticle >div:nth-child(8),.popularArticle >div:nth-child(9){
         display: none;
     }
 }
+@media only screen and (max-width: 801px) {
+    .flex-right{
+        max-width: 100%;
+    }
+    .container {
+        margin-inline: 10px;
+    }
+    .flex-left{
+        width: 100%;
+    }
+    .kindleBooksDetail-content{
+        flex-wrap: wrap;
+    }
+}
 @media only screen and (max-width: 768px) {
-    .seeMore .seeMoreArticles .seeMoreArticle .articleContent .articleContent-text{
+    .popularArticle .seeMoreArticle .articleContent .articleContent-text{
         padding: 20px 20px;
         font-size: 14px;
     }
@@ -318,29 +264,39 @@ main{
     .seeMore{
         width: 100%;
     }
-    .popularArticle .bestPopular{
-        height: 385px;
-        width: 100%;
-        align-items: center;
-    }
-    .popularArticle{
-        flex-direction: column;
-        align-items: center;
-        margin-top: 10px;
-    }
-    .popularArticle .bestPopular img{
-        height: 50%;
-        object-fit: cover;
+    .popularArticles .categoryName {
+        font-size: 28px;
+        margin-block: 5px 35px;
     }
 }
-@media only screen and (max-width: 486px) {
-    .seeMore .seeMoreArticles .seeMoreArticle{
-        height: 300px;
+@media only screen and (max-width: 610px) {
+    .popularTitleIcon{
+        position: relative;
+        width: 50px;
+        top: -12px;
+    }
+    .section-title{
+        width: 300px;
+        height: 38px;
+        font-size: 20px;
+        left: 36px;
+        top: 0;
+        padding-left: 30px;
+    }
+    .section-title::before{
+        width: 300px;
+        bottom: 0;
+        left: 0;
     }
 }
-@media only screen and (max-width: 465px) {
-    .popularArticle .bestPopular{
-        height: 300px;
-        max-width: 327px;
+@media only screen and (max-width: 600px) {
+    .popularArticle {
+        gap: 15px;
+        grid-template-columns: repeat(auto-fit, minmax(205px, 1fr));
+    }
+}
+@media only screen and (max-width: 504px) {
+    .popularArticle >div:nth-child(2),.popularArticle >div:nth-child(3),.popularArticle >div:nth-child(4){
+        display: none;
     }
 }

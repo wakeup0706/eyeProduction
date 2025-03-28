@@ -6,9 +6,6 @@
     --text-black: #323232;
     --background: #EDF2F6;
 }
-body{
-    padding-top: 95px;
-}
 .breadcrumb{
     position: relative;
     font-size: 14px;
@@ -94,12 +91,15 @@ main .sns-content img:hover{
     background-color: var(--seeMore-button);
     color: white;
 }
+.flex-left .infor .infor-content{
+    padding-right: 25px;
+}
 .flex-left .infor .infor-title::before{
     content: "»";
     margin-right: 10px;
     font-size: 40px;
     position:absolute;
-    top: 50%;
+    top: 42%;
     left: 20px;
     color: #FFFDAB;
     transform: translateY(-50%);
@@ -134,16 +134,13 @@ main .sns-content img:hover{
     margin-top: 20px;
     text-align: left;
 }
-.flex-left .banner-under{
+.flex-left  .under-banner{
     max-width: 410px;
-    height: 239px;
-    overflow: hidden;
     margin-inline: auto;
-    border: 10px solid var(--seeMore-button);
-    border-radius: 40px 0 40px 0;
 }
-.flex-left .banner-under img{
-    width: 100%;
+.flex-left  .under-banner img{
+    border-radius: 40px 0 40px 0;
+    border: 10px solid var(--seeMore-button);
     object-fit: cover;
 }
 .el-input__inner{
@@ -266,13 +263,7 @@ button{
     padding-top: 10%;
 }
 
-
-
-
 @media only screen and (max-width: 801px) {
-    body{
-        padding-top: 148px;
-    }
     .flex-right{
         display: none;
     }
@@ -284,17 +275,14 @@ button{
     .flex-left .line-youtube {
         margin-block: 40px;
     }
+    .flex-left .banner{
+        margin-bottom: 30px;
+    }
 }
 @media only screen and (max-width: 504px) {
-    body{
-        padding-top: 63px;
-    }
     main .sns-content{
         max-width: 130px;
         gap: 5px;
-    }
-    .flex-left .infor{
-        margin-block: 100px;
     }
     .flex-left .infor .infor-title{
         font-size: 20px;
@@ -303,7 +291,7 @@ button{
         font-size:14px;
     }
     .flex-left .infor{
-        margin-block : 45px;
+        margin-block : 25px;
         
     }
     .flex-left .infor .infor-content p{
@@ -313,14 +301,17 @@ button{
         flex-direction: column;
     }
     .flex-left .line-youtube {
+        margin-block: 20px;
+        flex-direction: column;
+        gap: 5px;
+        max-width: 330px;
+        margin-inline: auto;
+    }
+    .flex-left .now {
         margin-block: 30px;
     }
 }
 @media only screen and (max-width: 400px) {
-    .flex-left .infor{
-        margin-block: 100px;
-        margin-block : 45px;
-    }
     .flex-left .infor .infor-title{
         font-size: 16px;
     }
@@ -335,6 +326,7 @@ button{
     .flex-left .now .now-content {
         font-size: 14px;
         padding: 15px 25px;
+        margin-top: 8px;
     }
     button{
         height: 30px;

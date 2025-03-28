@@ -25,12 +25,6 @@
     z-index: 1;
     top: -10px;
 }
-@media only screen and (max-width: 610px) {
-    .noticeIcon{
-        width: 47px;
-        top: -4px;
-    }
-}
 .navtabs {
     display: flex;
     justify-content: center;
@@ -57,35 +51,6 @@
     height: 3px;
     background: var(--seeMore-button);
     transition: left 0.3s ease, width 0.3s ease;
-}
-@media only screen and (max-width: 730px) {
-    .navtabs{
-        margin-block: 30px 20px;
-    }
-    .navtabs .navtab {
-        padding: 10px 17px;
-    }
-}
-@media only screen and (max-width: 616px) {
-    .allVision{
-        padding-block: 100px 280px;
-    }
-    .navtabs{
-        margin-block: 30px 20px;
-        font-size: 14px;
-    }
-    .navtabs .navtab {
-        padding: 10px 10px;
-    }
-}
-@media only screen and (max-width: 490px) {
-    .navtabs{
-        margin-block: 30px 20px;
-        font-size: 12px;
-    }
-    .navtabs .navtab {
-        padding: 10px 10px;
-    }
 }
 .vision_articles.active{
     display: block;
@@ -133,47 +98,6 @@
 }
 .vision_articles .vector2{
     right: -110px;
-}
-@media only screen and (max-width: 660px) {
-    .vision_articles .content{
-        grid-template-columns: 2fr 1fr 9fr;
-    }
-    .vision_articles .content .contentText{
-        font-size: 14px;
-    }
-}
-@media only screen and (max-width: 450px) {
-    .vision_articles .content .contnetImage{
-        width: 80px;
-    }
-}
-@media screen and (max-width: 580px){
-    .vision_articles .content .contentText{
-        padding-right: 10px;
-    }
-    .vision_articles .content{
-        gap: 10px;
-        padding: 10px;
-        margin-right: 15px;
-        border-radius: 3px;
-        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
-    }
-    .vision_articles .content .contentText{
-        font-size: 14px;
-        font-weight: 400;
-        overflow: hidden;
-    }
-}
-@media screen and (max-width: 450px){
-    .vision_articles .content{
-        margin-right: 0;
-        border-radius: 3px;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-    .vision_articles .content .contentDate{
-        margin-top: -92px;
-        margin-left: 20px;
-    }
 }
 /* end vision_articles content */
 .allVision .pagenation{
@@ -279,7 +203,6 @@
         border-width: 10px;
     }
 }
-
 @media screen and (max-width: 768px) {
     .visionImproment{
         height: auto;
@@ -302,11 +225,66 @@
         border-radius: 100px 0 100px 0;
     }
 }
-
+@media only screen and (max-width: 730px) {
+    .navtabs{
+        margin-block: 30px 20px;
+    }
+    .navtabs .navtab {
+        padding: 10px 17px;
+    }
+}
+@media only screen and (max-width: 660px) {
+    .vision_articles .content{
+        grid-template-columns: 2fr 1fr 9fr;
+    }
+    .vision_articles .content .contentText{
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 616px) {
+    .allVision{
+        padding-block: 100px 280px;
+    }
+    .navtabs{
+        margin-block: 30px 20px;
+        font-size: 14px;
+    }
+    .navtabs .navtab {
+        padding: 10px 10px;
+    }
+    .vision_articles{
+        padding-inline: 0;
+    }
+}
+@media only screen and (max-width: 610px) {
+    .noticeIcon{
+        width: 47px;
+        top: -4px;
+    }
+}
+@media screen and (max-width: 580px){
+    .vision_articles .content .contentText{
+        padding-right: 10px;
+    }
+    .vision_articles .content{
+        gap: 10px;
+        padding: 10px;
+        border-radius: 3px;
+        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+    }
+    .vision_articles .content .contentText{
+        font-size: 14px;
+        font-weight: 400;
+        overflow: hidden;
+    }
+}
 @media screen and (max-width: 560px) {
     .visionImproment .backgroundImg{
         height: 370px;
         margin-top: -277px;
+    }
+    .vision_articles .content .contentDate{
+        font-size: 11px;
     }
     .baners{
         margin-top: -300px;
@@ -323,7 +301,29 @@
         border-radius: 0 50px 0 50px;
     }
 }
+@media only screen and (max-width: 490px) {
+    .navtabs{
+        margin-block: 30px 20px;
+        font-size: 12px;
+    }
+    .navtabs .navtab {
+        padding: 10px 10px;
+    }
+}
 @media screen and (max-width: 380px) {
+    .vision_articles .content{
+        margin-right: 0;
+        border-radius: 3px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .vision_articles .content .contentDate{
+        margin-top: -60px;
+        font-size: 16px;
+    }
+    .vision_articles .content .contnetImage{
+        width: 46px;
+        margin-left: 20px;
+    }
     .visionImproment .backgroundImg {
         height: 280px;
         margin-top: -282px;

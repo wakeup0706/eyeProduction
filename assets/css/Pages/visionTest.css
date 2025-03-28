@@ -29,7 +29,12 @@
     margin-block: 50px 30px;
     color: var(--text-black);
 }
-
+.show-none{
+  display: none;
+}
+.show{
+  display: block;
+}
 @media only screen and (max-width: 610px) {
     .popularTitleIcon{
         position: relative;
@@ -376,6 +381,9 @@ input::-moz-focus-inner {
   border: 0;
 }
 @media screen and (max-width: 504px) {
+  .visionTest .categoryName{
+    font-size: 23px;
+  }
   .range-slider{
     flex-direction: column-reverse;
   }
@@ -395,7 +403,12 @@ input::-moz-focus-inner {
     right: 146px;
   }
 }
-
+.step-1 .pc{
+  display: block;
+}
+.step-1 .mobile{
+  display: none;
+}
 .bnbutton{
   height: 40px;
   text-align: center;
@@ -493,6 +506,12 @@ input::-moz-focus-inner {
     display: none;
   }
   #mobile{
+    display: block;
+  }
+  .step-1 .pc{
+    display: none;
+  }
+  .step-1 .mobile{
     display: block;
   }
 }

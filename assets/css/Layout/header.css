@@ -159,7 +159,6 @@ header .top-header .sns-content img:hover{
         height: 58px;
     }
 }
-
 @media screen and (max-width: 1024px) {
     header .top-header{
         height: 115px;
@@ -188,12 +187,20 @@ header .top-header .sns-content img:hover{
         width: 27px;
         height: 27px;
     }
+    body {
+        padding-top: 207px;
+    }
 }
 
+@media screen and (max-width: 801px) {
+    body {
+        padding-top: 221px;
+    }
+}
 @media screen and (max-width: 768px) {
     header .top-header{
-        height: 118px;
-        padding: 18px 0;
+        height: 88px;
+        padding: 5px 0;
     }
     header .top-header .logo-content{
         padding: 0 20px;
@@ -206,13 +213,16 @@ header .top-header .sns-content img:hover{
         font-size: 15px;
         letter-spacing: 0.1px;
     }
+    header .top-header .hamburger {
+        bottom: 18px;
+    }
     header .top-header .hamburger .circle{
         width: 48px;
         height: 48px;
         left: 18px;
     }
     header .top-header .sns-content{
-        top: 78px;
+        top: 55px;
         width: 145px;
         right: 15px;
     }
@@ -220,12 +230,14 @@ header .top-header .sns-content img:hover{
         width: 25px;
         height: 25px;
     }
+    body {
+        padding-top: 194px;
+    }
 }
 
 @media screen and (max-width: 660px) {
     header .top-header{
-        height: 108px;
-        padding: 16px 0;
+        height: 78px;
     }
     header .top-header .hamburger .circle{
         width: 44px;
@@ -233,62 +245,56 @@ header .top-header .sns-content img:hover{
         left: 12px;
     }
     header .top-header .logo-content .idea{
-        width: 223px;
+        width: 240px;
         font-size: 14px;
-        margin-top: 22px;
+        margin-top: 10px;
     }
     header .top-header .logo-content .logo{
         max-width: 270px;
     }
     header .top-header .sns-content{
-        top: 68px;
-        width: 90px;
+        top: 45px;
+        width: 115px;
         gap: 4px;
+    }
+    body {
+        padding-top: 184px;
     }
 }
 
+@media screen and (max-width: 585px) {
+    header .top-header .sns-content{
+        width: 90px;
+    }
+}
 @media screen and (max-width: 504px) {
     body {
-        padding-top: 152px;
+        padding-top: 171px;
     }
     header .top-header{
-        height: 98px;
-        padding: 12px 0;
+        height: 75px;
     }
     header .top-header .hamburger .circle{
         width: 40px;
         height: 40px;
     }
     header .top-header .hamburger{
-        bottom: -50px;
+        left: -10px;
+        bottom: 10px;
     }
-    header .top-header .hamburger .circle::after, header .top-header .hamburger .circle::before{
-        background-color: #84C225;
-    }
-    header .top-header .hamburger .circle div{
-        background-color: #84C225;
-    }
-    header .top-header .hamburger .circle{
-        background-color: #ffffff;
-    }
-    header .top-header .sns-content{
-        left: 90px;
-        top: 117px;
-        right: auto;
-        width: auto;
-    }
-    header .top-header .sns-content div{
-        width: 30px;
-        height: 30px;
+    header .top-header .sns-content.flex{
+        display: none;
     }
     header .top-header .logo-content{
+        margin-inline: auto 0;
         padding: 0 15px;
     }
     header .top-header .logo-content .logo{
         max-width: 210px;
     }
     header .top-header .logo-content .idea{
-        width: 190px;
+        width: 224px;
+        min-width: 224px;
         font-size: 13px;
         margin-top: 18px;
     }
@@ -296,8 +302,7 @@ header .top-header .sns-content img:hover{
 
 @media screen and (max-width: 400px) {
     header .top-header{
-        height: 92px;
-        padding: 10px 0;
+        height: 70px;
     }
     header .top-header .hamburger .circle{
         width: 38px;
@@ -323,7 +328,7 @@ header .top-header .sns-content img:hover{
 
 @media screen and (max-width: 360px) {
     header .top-header{
-        height: 88px;
+        height: 58px;
     }
     header .top-header .logo-content .idea{
         display: none;
@@ -344,6 +349,12 @@ header .top-header .sns-content img:hover{
     header .top-header .sns-content div{
         width: 22px;
         height: 22px;
+    }
+    body {
+        padding-top: 149px;
+    }
+    header .top-header .hamburger{
+        bottom: 5px;
     }
 }
 
@@ -520,20 +531,27 @@ header .menu .menuButtons .menuButton:hover::after{
         top: -262px;
       }
     header .menu{
-        padding-block: 10px;
+        padding-block: 5px;
+        padding-left: 70px;
     }
     header .menu .menuButtons{
         flex-wrap: wrap;
     }
     header .menu .menuButtons .menuButton{
-        margin-top: 10px;
+        margin-block: 3px;
         width: calc(100% / 3);
     }
     .nav-down .search-dropdown .latest-link .latest-link-title{
         font-size: 12px;
     }
-
-
+    .menuButton .icon {
+        width: 25px;
+        height: 25px;
+    }
+    .menuButton p{
+        margin-top: 0;
+        font-size: 12px;
+    }
 
 }
 @media only screen and (max-width: 660px) {
@@ -541,36 +559,55 @@ header .menu .menuButtons .menuButton:hover::after{
         width: 40px;
         height: 40px;
     }
-    header .top-header .logo-content .idea{
-        width: 223px;
-        font-size: 13px;
-        margin-top: 30px;
-    }
 }
 @media only screen and (max-width: 504px) {
     .nav-up {
         top: -160px;
       }
+      header .menu {
+        padding-block: 3px;
+    }
     .top-header .sns-content{
         position: absolute;
         left: auto;
         left: 30px;
         top: 65px;
     }
-    header .menu{
-        height: 61px;
-    }
-    .menu .menuButtons .menuButton{
-        display: none;
-    }
     .menu .menuButtons .searchButton{
-        right: 50px;
-        top: 20px;
+        right: 23px;
+        top: 45px;
         transform: translateY(-50%);
     }
+    .menu .menuButtons .searchButton .button {
+        width: 35px;
+        height: 35px;
+    }
+    .menuButton .icon {
+        width: 22px;
+        height: 22px;
+    }
 }
-
-
+@media only screen and (max-width: 470px) {
+    header .menu {
+        padding-block: 3px;
+        padding-left: 22px;
+    }
+    .menu .menuButtons .searchButton {
+        right: 10px;
+    }
+    .menu .container {
+        padding-right: 55px;
+    }
+}
+@media only screen and (max-width: 407px) {
+    .menuButton p {
+        font-size: 10px;
+        font-weight: 400;
+    }
+    body{
+        padding-top: 167px;
+    };
+}
 /* sidebar */
 .sidebar {
     position: fixed;
@@ -672,5 +709,23 @@ header .menu .menuButtons .menuButton:hover::after{
         margin-top: 153px;
         height: calc(100vh - 153px);
         overflow-y: auto;
+    }
+    body {
+        padding-top: 162px;
+    }
+}
+@media screen and (max-width: 360px) {
+    body {
+        padding-top: 150px;
+    }
+}
+@media screen and (max-width: 352px) {
+    body {
+        padding-top: 165px;
+    }
+}
+@media screen and (max-width: 322px) {
+    body {
+        padding-top: 180px;
     }
 }

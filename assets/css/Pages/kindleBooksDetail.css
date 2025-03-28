@@ -6,69 +6,6 @@
     --text-black: #323232;
     --background: #EDF2F6;
 }
-body{
-    padding-top: 95px;
-}
-/* Hamburger Menu */
-.hamburger{
-    display: none;
-    position: absolute;
-    left: 25px;
-    bottom:5px;
-    z-index: 2;
-    cursor: pointer;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.hamburger .circle{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: white;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-.hamburger .circle:hover{
-    transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-.hamburger .circle div{
-    width: 50%;
-    height: 2px;
-    background-color: #84C225;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.hamburger .circle::after,
-.hamburger .circle::before{
-    content: "";
-    width: 50%;
-    height: 2px;
-    background-color: #84C225;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.hamburger .circle::after{
-    top: 35%;
-}
-.hamburger .circle::before{
-    top: 65%;
-}
-@media screen and (max-width: 504px){
-    .hamburger{
-        display: block;
-    }
-    .sidebar {
-        margin-top: 61px;
-        width: 100%;
-    }
-}
-
-
 .breadcrumb{
     position: relative;
     font-size: 14px;
@@ -116,14 +53,6 @@ main .sns-content img:hover{
 .kindleBooksDetail-content{
     width: 100%;
     gap:20px;
-}
-.flex-left{
-    position: relative;
-    max-width: 825px;
-    padding: 20px;
-    width: 80%;
-    background-color: #ffffff70;
-    margin-bottom: 15px;
 }
 .flex-left .bookData{
     width: 100%;
@@ -282,13 +211,6 @@ main .sns-content img:hover{
     height: auto;
     margin-right: 8px;
 }
-
-
-
-.flex-right{
-    max-width: 355px;
-    width: 355px;
-}
 .flex-right .title{
     font-size: 18px;
     font-weight: 700;
@@ -335,25 +257,6 @@ main .sns-content img:hover{
     text-align: center;
     padding-top: 10%;
 }
-
-@media only screen and (max-width: 801px) {
-    body{
-        padding-top: 148px;
-    }
-    .flex-right{
-        display: none;
-    }
-    .flex-left{
-        width: 100%;
-    }
-}
-@media only screen and (max-width: 504px) {
-    body{
-        padding-top: 63px;
-    }
-}
-
-
 .allVision{
     position: relative;
     padding-block: 5px 40px;
