@@ -728,4 +728,7 @@ input{
   .modal-footer {
     height: 125px;
   }
+  .visionPossibility .categoryName{
+    font-size: 20px;
+  }
 }

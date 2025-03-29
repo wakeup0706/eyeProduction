@@ -276,6 +276,12 @@
     .baners .baner{
         height: 150px;
     }
+    .allVision{
+        padding-block: 60px 280px;
+    }
+    .allVisionArticles .seeMoreArticle{
+        height: 275px;
+    }
 }
 /* end visionImproment content */
 

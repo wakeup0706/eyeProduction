@@ -311,6 +311,12 @@ display: none;
         border-width: 10px;
         border-radius: 0 50px 0 50px;
     }
+    .allVisionArticles .seeMoreArticle{
+        height: 300px;
+    }
+    .allVisionArticles .articleContent .articleContent-text{
+        font-size: 14px;
+    }
 }
 @media screen and (max-width: 380px) {
     .visionImproment .backgroundImg {
@@ -322,6 +328,15 @@ display: none;
     }
     .baners .baner{
         height: 150px;
+    }
+    .navtabs .navtab{
+        padding: 5px;
+    }
+    .allVision{
+        padding-block: 60px 280px;
+    }
+    .allVisionArticles .seeMoreArticle{
+        height: 275px;
     }
 }
 /* end visionImproment content */

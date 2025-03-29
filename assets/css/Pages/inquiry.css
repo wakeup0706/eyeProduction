@@ -76,12 +76,6 @@ main .sns-content img:hover{
     object-fit: contain;
     margin-bottom: 80px;
 }
-.nav-up{
-    top: 0;
-}
-
-
-
 .flex-left .infor .infor-title{
     position: relative;
     font-size: 24px;
@@ -334,5 +328,10 @@ button{
     }
     .flex-left .line-youtube {
         margin-block: 20px;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .flex-left .title .text{
+        font-size: 18px;
     }
 }

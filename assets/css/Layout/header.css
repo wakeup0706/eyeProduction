@@ -728,4 +728,7 @@ header .menu .menuButtons .menuButton:hover::after{
     body {
         padding-top: 180px;
     }
+    .nav-up {
+        top: -181px;
+    }
 }

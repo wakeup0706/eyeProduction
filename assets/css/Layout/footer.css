@@ -238,7 +238,7 @@ footer .floor {
 }
 @media screen and (max-width: 480px) {
     footer >.container {
-        height: 410px;
+        height: 285px;
     }
     footer .footer-content{
         padding: 30px 0;

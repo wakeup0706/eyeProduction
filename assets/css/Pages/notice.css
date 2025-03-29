@@ -335,6 +335,11 @@
         height: 150px;
     }
 }
+@media screen and (max-width: 364px) {
+    .navtabs .navtab{
+        padding: 10px 3px;
+    }
+}
 /* end visionImproment content */
 
 /* endBanner content */

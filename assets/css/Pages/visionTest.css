@@ -747,9 +747,14 @@ input::-moz-focus-inner {
   .result {
     gap: 20px;
     margin-block: 5px 20px;
-}
+  }
 }
 .sectionBack{
   position: absolute;
   bottom: -593px;
+}
+@media only screen and (max-width: 370px) {
+  .visionTest .categoryName{
+    font-size: 18px;
+  }
 }

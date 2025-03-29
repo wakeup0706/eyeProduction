@@ -314,6 +314,12 @@ main .sns-content img:hover{
         padding: 10px 40px;
     }
 }
+@media only screen and (max-width: 616px) {
+    .navtabs .navtab{
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
 
 
 .vision_articles.active{
@@ -340,12 +346,12 @@ main .sns-content img:hover{
     position: relative;
     transform-style: preserve-3d;
     perspective: 1000px;
-
+    
     &:hover {
         & > .card-front {
             transform: rotateY(180deg);
         }
-
+        
         & > .card-back {
             transform: rotateY(0deg);
             opacity: 1;
@@ -365,7 +371,7 @@ main .sns-content img:hover{
 }
 .vision_articles .card-front {
     z-index: 2;
-
+    
     & > img {
         height: 100%;
         object-fit: cover;
@@ -432,3 +438,8 @@ main .sns-content img:hover{
     position: relative;
 }
 /* end all visionDictionary content */
+@media only screen and (max-width: 353px) {
+    .vision_articles{
+        padding-inline: 0;
+    }
+}

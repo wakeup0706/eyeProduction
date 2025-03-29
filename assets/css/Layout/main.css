@@ -144,7 +144,7 @@ main{
     border-radius: 30px;
     margin-inline: auto;
     overflow: hidden;
-    margin-block: 40px 26px;
+    margin-block: 40px 2px;
     cursor: pointer;
 }
 .bestLastArticle .baner{
@@ -191,7 +191,7 @@ main{
     font-size: 18px;
     font-weight: bold;
     color: #555555;
-    padding-block: 20px;
+    padding-block: 10px;
 }
 .articles .seeMore .seeMoreTitle::after{
     content: "";
@@ -214,11 +214,13 @@ main{
 .seeMore .seeMoreArticles .seeMoreArticle{
     border-radius:5px;
     max-width: 327px;
-    height: 403px;
+    background-color: white;
+    width: 100%;
+    max-height: 403px;
     box-shadow: 0 3px 3px #0000004a;
     overflow: hidden;
 }
-.seeMore .seeMoreArticles .seeMoreArticle .articleImg{
+.seeMore .seeMoreArticles .seeMoreArticle img{
     height: 55%;
     overflow: hidden;
 }
@@ -1107,7 +1109,7 @@ border-bottom: 1px solid var(--border);
 }
 @media only screen and (max-width: 770px) {
     .articles .seeMore .seeMoreTitle{
-        padding-block: 10px;
+        padding-block: 5px;
     }
     .bestLastArticle{
         border-radius: 15px;
