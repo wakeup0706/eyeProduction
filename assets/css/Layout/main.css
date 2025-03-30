@@ -378,7 +378,7 @@ main{
 }
 .card-list .card-item{
     list-style: none;
-    margin-right: 20px !important;
+    margin-right: 30px !important;
 }
 .swiper-wrapper{
     float: right;
@@ -1475,9 +1475,6 @@ border-bottom: 1px solid var(--border);
     .articles .seeMore{
         margin-top: 15px;
     }
-    .seeMore .seeMoreArticles .seeMoreArticle {
-        margin-block: 0;
-    }
 }
 @media screen and (max-width: 450px){
     .staffRecommended .contents .content{
@@ -1517,5 +1514,8 @@ border-bottom: 1px solid var(--border);
     }
     .baners .baner{
         height: 150px;
+    }
+    .seeMore .seeMoreArticles .seeMoreArticle{
+        height: 350px;
     }
 }

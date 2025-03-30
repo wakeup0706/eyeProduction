@@ -307,8 +307,9 @@ footer .floor {
     }
 }
 .topButton{
-    position: absolute;
-    top: 60px;
+    display: none;
+    position: fixed;
+    bottom: 20px;
     right: 20px;
     background-color: #84C225;
     color: #FFFFFF;
@@ -325,7 +326,6 @@ footer .floor {
 }
 @media screen and (max-width: 500px) {
     .topButton{
-        top: -20px;
         padding: 10.5px 7px;
     }
 }
