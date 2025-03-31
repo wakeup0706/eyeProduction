@@ -47,9 +47,6 @@ main .sns-content img{
 main .sns-content img:hover{
     filter: brightness(1.1);
 }
-.nav-up{
-    top: 0;
-}
 .kindleBooksDetail-content{
     width: 100%;
     gap:20px;

@@ -30,14 +30,9 @@
         top: -2px;
     }
 }
-@media only screen and (max-width: 801px) {
-    body{
-        padding-top: 252px;
-    }
-}
-@media only screen and (max-width: 504px) {
-    body{
-        padding-top: 152px;
+@media only screen and (max-width: 499px) {
+    .space{
+        height: 20px;
     }
 }
 

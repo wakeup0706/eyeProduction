@@ -64,9 +64,6 @@ main .sns-content img:hover{
     font-weight: 700;
     color: var(--text-black);
 }
-.nav-up{
-    top: 0;
-}
 .flex-left .releaseDate{
     padding-inline: 15px;
 }
@@ -546,5 +543,38 @@ main .sns-content img:hover{
     }
     .flex-left .infor .infor-title{
         font-size: 20px;
+    }
+}
+@media screen and (max-width: 340px){
+    .flex-left .releaseDate{
+        padding-inline: 10px;
+    }
+    .flex-left .releaseDate .author{
+        gap: 5px;
+    }
+    .flex-left .releaseDate .author .tag{
+        position: relative;
+        width: 46px;
+        height: 18px;
+    }
+    .flex-left .releaseDate .author .name{
+        font-size: 14px;
+    }
+    .flex-left .releaseDate .update{
+        font-size: 12px;
+        margin-right: 3px;
+    }
+    .flex-left .releaseDate .openingDay{
+        font-size: 12px;
+        margin-right: 3px;
+    }
+    .flex-left .infor .infor-content p{
+        font-size: 14px;
+    }
+    .flex-left .infor .infor-content{
+        font-size: 14px;
+    }
+    .flex-left .infor .infor-title{
+        font-size: 16px;
     }
 }

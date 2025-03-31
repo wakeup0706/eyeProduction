@@ -611,6 +611,10 @@ input::-moz-focus-inner {
   .subjectText {
     top: 2px;
   }
+  .visionTesting .content .subjectIcon2{
+    width: 44px;
+    top: 4px
+  }
 }
 .vision-test7{
   margin-block: 20px;

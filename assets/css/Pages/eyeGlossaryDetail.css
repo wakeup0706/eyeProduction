@@ -66,9 +66,6 @@ main .sns-content img:hover{
     font-weight: 700;
     color: var(--text-black);
 }
-.nav-up{
-    top: 0;
-}
 .flex-left .releaseDate{
     padding-inline: 15px;
 }

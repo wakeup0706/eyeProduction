@@ -688,27 +688,51 @@ header .menu .menuButtons .menuButton:hover::after{
 }
 @media screen and (max-width: 801px) {
     .sidebar{
-        margin-top: 251px;
-        height: calc(100vh - 251px);
-        overflow-y: auto;
+        margin-top: 221px;
+        height: calc(100vh - 221px);
     }
     .overlay{
         top: 252px;
     }
 }
+@media screen and (max-width: 768px) {
+    .sidebar{
+        margin-top: 194px;
+        height: calc(100vh - 194px);
+    }
+}
+@media screen and (max-width: 660px) {
+    .sidebar{
+        margin-top: 184px;
+        height: calc(100vh - 184px);
+    }
+}
 @media screen and (max-width: 504px) {
     .sidebar{
-        margin-top: 158px;
+        margin-top: 172px;
         width: 100%;
-        height: calc(100vh - 158px);
-        overflow-y: auto;
+        height: calc(100vh - 172px);
+    }
+    .sidebar .close{
+        font-size: 20px;
+        padding: 0 20px;
+    }
+    .sidebar .category {
+        font-size: 26px;
+        font-weight: 800;
+        margin: 30px 10px 10px 10px;
+    }
+    .sidebar .lists .list{
+        padding: 0;
+    }
+    .sidebar .list .nav-link span{
+        font-weight: 600;
     }
 }
 @media screen and (max-width: 400px) {
     .sidebar{
-        margin-top: 153px;
-        height: calc(100vh - 153px);
-        overflow-y: auto;
+        margin-top: 160px;
+        height: calc(100vh - 160px);
     }
     body {
         padding-top: 162px;
@@ -718,15 +742,27 @@ header .menu .menuButtons .menuButton:hover::after{
     body {
         padding-top: 150px;
     }
+    .sidebar{
+        margin-top: 150px;
+        height: calc(100vh - 150px);
+    }
 }
 @media screen and (max-width: 352px) {
     body {
         padding-top: 165px;
     }
+    .sidebar{
+        margin-top: 165px;
+        height: calc(100vh - 165px);
+    }
 }
 @media screen and (max-width: 322px) {
     body {
         padding-top: 180px;
+    }
+    .sidebar{
+        margin-top: 180px;
+        height: calc(100vh - 180px);
     }
     .nav-up {
         top: -181px;
