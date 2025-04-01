@@ -146,6 +146,9 @@
     font-size: 20px;
     padding-left: 14px;
 }
+.space{
+    display: none;
+}
 @media only screen and (max-width: 440px) {
     .allVisionArticles{
         padding-inline: 20px;
@@ -269,67 +272,72 @@
 /* end endBanner content */
 
 .fromShop{
-    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    margin-top: 25px;
+}
+.fromShop .goProducts{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 1000;
+    text-align: center;
+    padding-top: 15%;
+    color: white;
+    background-color: var(--seeMore-button);
+}
+.fromShop p{
+    width: fit-content;
+    color: var(--text-black);
+    font-size: 20px;
     font-weight: 700;
-    position: absolute;
-    color: #bdbdbd;
-    top: 150px;
-    right: 0;
-    width: 565px;
 }
-@media screen and (max-width: 1070px) {
-    .fromShop{
-        font-size: 26px;
-        top: 166px;
-        width: 481px;
-    }
-}
-@media screen and (max-width: 960px) {
-    .fromShop{
-        font-size: 20px;
-        top: 180px;
-        width: 365px;
-    }
-}
-@media screen and (max-width: 800px) {
-    .fromShop{
+@media screen and (max-width: 739px) {
+    .fromShop p{
         font-size: 17px;
-        top: 186px;
-        width: 308px;
     }
 }
-@media screen and (max-width: 725px) {
-    .fromShop{
-        font-size: 17px;
-        top: 153px;
-        width: 594px;
-    }
-}
-@media screen and (max-width: 610px) {
-    .fromShop{
+@media screen and (max-width: 674px) {
+    .fromShop p{
         font-size: 14px;
-        top: 141px;
-        width: 490px;
     }
-}
-@media screen and (max-width: 504px) {
+    .fromShop .goProducts{
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+        padding-top: 5%;
+    }
+} 
+@media screen and (max-width: 564px) {
     .popularArticle{
         margin-top: 26px;
     }
     .popularArticle .bestPopular{
         margin-top: 30px;
     }
-    .fromShop{
+    .fromShop p{
         font-size: 14px;
-        top: 142px;
-        width: 350px;
+        text-align: center;
+    }
+    .space{
+        display: block;
     }
     .allVision{
         padding-block: 60px 280px;
     }
 }
-@media screen and (max-width: 354px) {
-    .fromShop{
-        width: 253px;
+@media screen and (max-width: 372px) {
+    .fromShop p {
+        font-size: 12px;
+        text-align: center;
+    }
+    .fromShop .goProducts {
+        width: 25px;
+        height: 25px;
+        font-size: 16px;
+        padding-top: 1%;
     }
 }
