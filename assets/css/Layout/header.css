@@ -481,7 +481,6 @@ header .menu .menuButtons .menuButton:hover::after{
     border: 1px solid #0A6FC8;
     padding-inline: 5px;
     border-radius: 3px;
-    margin-top: -5px;
 }
 .nav-down .search-dropdown .latest-link p:hover::after{
     content: "";
