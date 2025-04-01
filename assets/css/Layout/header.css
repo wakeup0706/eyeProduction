@@ -555,7 +555,7 @@ header .menu .menuButtons .menuButton:hover::after{
     }
     .nav-down .search-dropdown .latest-link .hotKeyword{
         font-size: 14px;
-        margin-top: 0;
+        margin-top: -2px;
     }
     .nav-down .search-dropdown >div{
         height: 40px;
@@ -612,7 +612,7 @@ header .menu .menuButtons .menuButton:hover::after{
         padding-inline: 0px;
     }
     .menu .menuButtons .searchButton {
-        right: 10px;
+        right: 0px;
     }
     .menuButton p {
         font-size: 10px;
