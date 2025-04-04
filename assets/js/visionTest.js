@@ -34,11 +34,15 @@ function handleSubmit(event) {
     stepElm.classList.remove('slide-out');
     stepElm.classList.add('slide-in');
   },100)
-  showToast("Your changes have been saved!", "success");
+}
+
+function markSize(){
+  console.log(coinInput.value)
+  handleSubmit();
 }
 
 button1.addEventListener('click', handleSubmit);
-button2.addEventListener('click', handleSubmit);
+button2.addEventListener('click', markSize);
 button3.addEventListener('click', handleSubmit);
 button4.addEventListener('click', handleSubmit);
 button5.addEventListener('click', handleSubmit);
