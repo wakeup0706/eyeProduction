@@ -441,7 +441,7 @@ header .menu .menuButtons .menuButton:hover::after{
     display: none;
 }
 .nav-down .search-dropdown >div{ 
-    height: 50px;
+    height: 52px;
     width: 100%;
     background-color: #E6E6E6cf;
 }
@@ -723,9 +723,9 @@ header .menu .menuButtons .menuButton:hover::after{
 
 @media screen and (max-width: 504px) {
     .sidebar{
-        margin-top: 172px;
+        margin-top: 168px;
         width: 100%;
-        height: calc(100vh - 172px);
+        height: calc(100vh - 168px);
     }
     .sidebar .close{
         font-size: 20px;
@@ -743,7 +743,6 @@ header .menu .menuButtons .menuButton:hover::after{
         font-weight: 600;
     }
 }
-
 @media screen and (max-width: 400px) {
     .sidebar{
         margin-top: 160px;
@@ -764,21 +763,14 @@ header .menu .menuButtons .menuButton:hover::after{
 }
 @media screen and (max-width: 352px) {
     body {
-        padding-top: 165px;
+        padding-top: 145px;
     }
     .sidebar{
-        margin-top: 165px;
-        height: calc(100vh - 165px);
+        margin-top: 145px;
+        height: calc(100vh - 145px);
     }
 }
 @media screen and (max-width: 322px) {
-    body {
-        padding-top: 180px;
-    }
-    .sidebar{
-        margin-top: 180px;
-        height: calc(100vh - 180px);
-    }
     .nav-up {
         top: -181px;
     }

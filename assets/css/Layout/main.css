@@ -501,16 +501,16 @@ main{
     background-size: cover;
     background-position: center;
     left: 0;
-    border-radius: 0 80px 0 80px;
-    border: 10px solid #ffffff;
+    border-radius: 0 40px 0 40px;
+    border: 10px solid var(--seeMore-button);
 }
 .rightBaner{
     background-image: url('../../img/land_banner2.jpg');
     background-size: cover;
     background-position: center;
     right: 0;
-    border-radius: 80px 0 80px 0;
-    border: 10px solid #ffffff;
+    border-radius: 40px 0 40px 0;
+    border: 10px solid var(--seeMore-button);
 }
 /* end visionImproment content */
 
@@ -1071,12 +1071,6 @@ border-bottom: 1px solid var(--border);
     .leftBaner, .rightBaner{
         border-width: 10px;
     }
-    .leftBaner{
-        border-radius: 0 100px 0 100px;
-    }
-    .rightBaner{
-        border-radius: 100px 0 100px 0;
-    }
 }
 @media screen and (max-width: 924px) {
     .baners {
@@ -1139,12 +1133,6 @@ border-bottom: 1px solid var(--border);
     }
     .baners .baner{
         height: 185px;
-    }
-    .leftBaner{
-        border-radius: 0 85px 0 85px;
-    }
-    .rightBaner{
-        border-radius: 85px 0 85px 0;
     }
     .eyeGlossaryCard-wrapper{
         margin: 0 10px 25px;
@@ -1358,7 +1346,6 @@ border-bottom: 1px solid var(--border);
     }
     .leftBaner, .rightBaner{
         border-width: 10px;
-        border-radius: 0 50px 0 50px;
     }
     .testResult{
         padding-top: 50px;
@@ -1396,11 +1383,8 @@ border-bottom: 1px solid var(--border);
     }
 }
 @media screen and (max-width: 500px){
-    .kindleBooks .books {
-        grid-auto-flow: dense;
-    }
-    .kindleBooks .books >div{
-        width: 200px;
+    .kindleBooks .books >div:nth-child(3){
+        display: none;
     }
     .line-youtube-registration div{
         gap: 10px;
@@ -1437,6 +1421,10 @@ border-bottom: 1px solid var(--border);
     }
     .aboutHomework .banners{
         gap: 5px;
+        grid-auto-flow: dense;
+        max-width: 220px;
+        margin-inline: auto;
+        margin-top: 10px;
     }
 }
 @media only screen and (max-width: 486px) {

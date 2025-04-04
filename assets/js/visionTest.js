@@ -1,3 +1,8 @@
+// showToast("Your changes have been saved!", "success");
+// setTimeout(() => showToast("Something went wrong!", "error"), 1000);
+// setTimeout(() => showToast("Check your settings!", "warning"), 2000);
+// setTimeout(() => showToast("This is an info message.", "info"), 3000);
+
 const button1 = document.querySelector('#button-1');
 const button2 = document.querySelector('#button-2');
 const button3 = document.querySelector('#button-3');
@@ -29,6 +34,7 @@ function handleSubmit(event) {
     stepElm.classList.remove('slide-out');
     stepElm.classList.add('slide-in');
   },100)
+  showToast("Your changes have been saved!", "success");
 }
 
 button1.addEventListener('click', handleSubmit);

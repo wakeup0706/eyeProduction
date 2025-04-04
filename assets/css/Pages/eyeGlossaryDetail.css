@@ -169,6 +169,9 @@ main .sns-content img:hover{
     padding-block: 15px;
     border-bottom: 6px solid #C4D700;
 }
+.SBC .categoryName p{
+    margin-left: 20px;
+}
 .SBC .categoryName::after{
     content: "";
     position: absolute;
@@ -523,7 +526,7 @@ main .sns-content img:hover{
         font-size: 12px;
     }
     .flex-left .releaseDate .like .tag{
-        width: 84px;
+        width: 90px;
     }
     .flex-left .bookData .book-content{
         margin-block: 30px;
@@ -546,6 +549,15 @@ main .sns-content img:hover{
     .byCategory .categoryName{
         padding-block: 20px 10px;
         font-size: 18px;
+    }
+    .SBC .categoryName{
+        font-size: 18px;
+    }
+    .byInitial{
+        margin-top: 20px;
+    }
+    .byInitial .categoryLists{
+        margin-top: 10px;
     }
 }
 @media only screen and (max-width: 401px) {

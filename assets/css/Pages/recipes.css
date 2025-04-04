@@ -209,6 +209,11 @@ display: none;
     font-size: 20px;
     padding-left: 14px;
 }
+@media only screen and (max-width: 847px) {
+    .allVisionArticles .seeMoreArticle:nth-child(7),.allVisionArticles .seeMoreArticle:nth-child(8),.allVisionArticles .seeMoreArticle:nth-child(9){
+        display: none;
+    }
+}
 @media only screen and (max-width: 600px) {
     .allVisionArticles{
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
@@ -217,11 +222,16 @@ display: none;
         height: 350px;
     }
 }
+@media only screen and (max-width: 504px) {
+    .allVisionArticles .seeMoreArticle:nth-child(4),.allVisionArticles .seeMoreArticle:nth-child(5),.allVisionArticles .seeMoreArticle:nth-child(6),.allVisionArticles .seeMoreArticle:nth-child(7),.allVisionArticles .seeMoreArticle:nth-child(8),.allVisionArticles .seeMoreArticle:nth-child(9){
+        display: none;
+    }
+}
 /* end all visionDictionary content */
 /* visionImproment content */
 .visionImproment{
     position: relative;
-    height: 500px;
+    height: 425px;
 }
 .visionImproment .backgroundImg{
     width: 100%;
@@ -240,7 +250,7 @@ display: none;
 }
 .baners .baner{
     width: 400px;
-    max-height: 240px;
+    max-height: 280px;
     height: 240px;
     cursor: pointer;
 }
@@ -249,22 +259,19 @@ display: none;
     background-size: cover;
     background-position: center;
     left: 0;
-    border-radius: 0 125px 0 125px;
-    border: 10px solid #ffffff;
+    border-radius: 0 40px 0 40px;
+    border: 10px solid var(--seeMore-button);
 }
 .rightBaner{
     background-image: url('../../img/land_banner2.jpg');
     background-size: cover;
     background-position: center;
     right: 0;
-    border-radius: 125px 0 125px 0;
-    border: 10px solid #ffffff;
+    border-radius: 40px 0 40px 0;
+    border: 10px solid var(--seeMore-button);
 }
 
 @media screen and (max-width: 1200px) {
-    .baners .baner{
-        height: 240px;
-    }
     .leftBaner, .rightBaner{
         border-width: 10px;
     }
@@ -273,6 +280,7 @@ display: none;
 @media screen and (max-width: 768px) {
     .visionImproment{
         height: auto;
+        margin-bottom: 20px;
     }
     .visionImproment .backgroundImg{
         height: 230px;
@@ -284,12 +292,6 @@ display: none;
     }
     .baners .baner{
         height: 180px;
-    }
-    .leftBaner{
-        border-radius: 0 100px 0 100px;
-    }
-    .rightBaner{
-        border-radius: 100px 0 100px 0;
     }
 }
 
@@ -306,16 +308,26 @@ display: none;
     }
     .baners .baner{
         width: 90%;
+        height: 280px;
     }
     .leftBaner, .rightBaner{
         border-width: 10px;
-        border-radius: 0 50px 0 50px;
     }
     .allVisionArticles .seeMoreArticle{
         height: 300px;
     }
     .allVisionArticles .articleContent .articleContent-text{
         font-size: 14px;
+    }
+}
+@media screen and (max-width: 490px) {
+    .baners .baner{
+        height: 240px;
+    }
+}
+@media screen and (max-width: 405px) {
+    .baners .baner{
+        height: 190px;
     }
 }
 @media screen and (max-width: 380px) {

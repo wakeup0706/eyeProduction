@@ -159,7 +159,7 @@
 /* visionImproment content */
 .visionImproment{
     position: relative;
-    height: 500px;
+    height: 425px;
 }
 .visionImproment .backgroundImg{
     width: 100%;
@@ -179,7 +179,7 @@
 .baners .baner{
     width: 400px;
     max-height: 280px;
-    height: 280px;
+    height: 240px;
     cursor: pointer;
 }
 .leftBaner{
@@ -187,22 +187,19 @@
     background-size: cover;
     background-position: center;
     left: 0;
-    border-radius: 0 150px 0 150px;
-    border: 10px solid #ffffff;
+    border-radius: 0 40px 0 40px;
+    border: 10px solid var(--seeMore-button);
 }
 .rightBaner{
     background-image: url('../../img/land_banner2.jpg');
     background-size: cover;
     background-position: center;
     right: 0;
-    border-radius: 150px 0 150px 0;
-    border: 10px solid #ffffff;
+    border-radius: 40px 0 40px 0;
+    border: 10px solid var(--seeMore-button);
 }
 
 @media screen and (max-width: 1200px) {
-    .baners .baner{
-        height: 300px;
-    }
     .leftBaner, .rightBaner{
         border-width: 10px;
     }
@@ -211,6 +208,7 @@
 @media screen and (max-width: 768px) {
     .visionImproment{
         height: auto;
+        margin-bottom: 20px;
     }
     .visionImproment .backgroundImg{
         height: 230px;
@@ -221,13 +219,7 @@
         gap: 15px;
     }
     .baners .baner{
-        height: 200px;
-    }
-    .leftBaner{
-        border-radius: 0 100px 0 100px;
-    }
-    .rightBaner{
-        border-radius: 100px 0 100px 0;
+        height: 180px;
     }
 }
 
@@ -244,11 +236,20 @@
     }
     .baners .baner{
         width: 90%;
-        height: 200px;
+        height: 280px;
     }
     .leftBaner, .rightBaner{
         border-width: 10px;
-        border-radius: 0 50px 0 50px;
+    }
+}
+@media screen and (max-width: 380px) {
+    .baners .baner{
+        height: 240px;
+    }
+}
+@media screen and (max-width: 405px) {
+    .baners .baner{
+        height: 190px;
     }
 }
 @media screen and (max-width: 380px) {
