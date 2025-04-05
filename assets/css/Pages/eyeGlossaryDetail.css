@@ -76,7 +76,6 @@ main .sns-content img:hover{
 }
 .flex-left .releaseDate .like .tag{
     position: relative;
-    width: 112px;
 }
 .flex-left .releaseDate .like .name{
     font-size: 16px;
@@ -524,9 +523,6 @@ main .sns-content img:hover{
     }
     .flex-left .releaseDate .like .name{
         font-size: 12px;
-    }
-    .flex-left .releaseDate .like .tag{
-        width: 90px;
     }
     .flex-left .bookData .book-content{
         margin-block: 30px;

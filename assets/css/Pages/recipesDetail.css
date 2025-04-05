@@ -75,7 +75,6 @@ main .sns-content img:hover{
 }
 .flex-left .releaseDate .like .tag{
     position: relative;
-    width: 112px;
 }
 .flex-left .releaseDate .like .name{
     font-size: 16px;
@@ -535,7 +534,6 @@ main .sns-content img:hover{
     }
     .flex-left .releaseDate .like .tag{
         position: relative;
-        width: 102px;
         font-size: 14px;
     }
     .flex-left .releaseDate .like .name{
