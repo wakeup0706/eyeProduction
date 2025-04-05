@@ -175,7 +175,7 @@ siryoku_img[17] = 2.75;
 let test_ok = 0;  // if
 let test_ng = 0;  // if
 let test_no;      // direction
-let now  = document.getElementById("pobject").value;  // setting value
+let now  = document.getElementById("pobject").value;  // now value
 let l_result = 1.0; // left result
 let r_result = 1.0; // right result
 let start; //start value
@@ -184,39 +184,41 @@ function imgset(now, rl) {
   let ran = Math.round(Math.random()*7)+1;
   test_no = ran;
   // 縮小率の計算
-  zoom = coinInput.value;
-  z = (260 - zoom) / 165;
-  w = parseInt(siryoku_img[now] * z);
-  h = parseInt(siryoku_img[now] * 1.011 * z);
+  let zoom = coinInput.value;
+  let z = (260 - zoom) / 165;
+  let w = parseInt(siryoku_img[now] * z);
+  let h = parseInt(siryoku_img[now] * 1.011 * z);
   // 画像描画
   if (rl == 1) {
-      l_result = siryoku[now];
-      landolt(1,(w/2), ran);
+    document.getElementById("view_r_now").innerHTML = siryoku[now];
+    l_result = siryoku[now];
+    landolt(1,(w/2), ran);
   } else {
-      r_result = siryoku[now];
-      landolt(2,(w/2), ran);
+    document.getElementById("view_l_now").innerHTML = siryoku[now];
+    r_result = siryoku[now];
+    landolt(2,(w/2), ran);
   }
 }
 //-----------------------------------------------
 function ans(ans, rl) {
   if (ans == test_no) {
-      test_ok = test_ok + 1;
-      if (test_ok >= 2) {
-          if (rl == 1) {
-            r_result = now;
-          } else {
-            l_result = now;
-          }
-          now = Number(now) + 1;
-          test_ok = 0;
-          test_ng = 0;
-          if (now == 18) {
-            handleSubmit();
-          }
-          showToast("success 2!", "success");
+    test_ok = test_ok + 1;
+    if (test_ok >= 2) {
+      if (rl == 1) {
+        r_result = now;
       } else {
-        showToast("success 1!", "success");
+        l_result = now;
       }
+      now = Number(now) + 1;
+      test_ok = 0;
+      test_ng = 0;
+      if (now == 18) {
+        handleSubmit();
+      }
+      showToast("正確です。", "success");
+    } else {
+      showToast("正確です。", "success");
+    }
   } else {
       test_ng = test_ng + 1;
       if (test_ng >= 2 || ans == 0) {
@@ -230,12 +232,11 @@ function ans(ans, rl) {
           handleSubmit();
         }
       } else {
-        showToast("warning 1!", "warning");
+        showToast("正確ではありません。", "warning");
       }
   }
   imgset(now, rl);
 }
-
 //////////////////////////////////////////////////////////////
 function landolt(rl,r, ran){
 
@@ -309,6 +310,7 @@ function chk3() {
     r_result = chk-1;
     l_result = chk-1;
   }
+
   test_no= 0;
   test_ok = 0;
   test_ng = 0;
