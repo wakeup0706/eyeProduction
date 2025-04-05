@@ -1,8 +1,3 @@
-// showToast("Your changes have been saved!", "success");
-// setTimeout(() => showToast("Something went wrong!", "error"), 1000);
-// setTimeout(() => showToast("Check your settings!", "warning"), 2000);
-// setTimeout(() => showToast("This is an info message.", "info"), 3000);
-
 const button1 = document.querySelector('#button-1');
 const button2 = document.querySelector('#button-2');
 const button3 = document.querySelector('#button-3');
@@ -205,9 +200,9 @@ function ans(ans, rl) {
     test_ok = test_ok + 1;
     if (test_ok >= 2) {
       if (rl == 1) {
-        r_result = now;
+        r_result = siryoku[now];
       } else {
-        l_result = now;
+        l_result = siryoku[now];
       }
       now = Number(now) + 1;
       test_ok = 0;
@@ -239,15 +234,13 @@ function ans(ans, rl) {
 }
 //////////////////////////////////////////////////////////////
 function landolt(rl,r, ran){
-
 	var canvas;
 	var angle;
 	var width = (r*2)+20;
 	var height = (r*2)+20;
-	if(height<300){
+	if(height < 300){
 		height = 300;
 	}
-	
 	if(rl==1){
 		canvas = document.getElementById("img_1");
 		canvas.width = width;
@@ -257,7 +250,6 @@ function landolt(rl,r, ran){
 		canvas.width = width;
 		canvas.height = height;
 	}
-
 	if(ran==1){
 		angle=225;
 	}else if(ran==2){
@@ -275,19 +267,13 @@ function landolt(rl,r, ran){
 	}else if(ran==8){
 		angle=45; 
 	}
-
    if(canvas.getContext){
-
 		angle = (angle%360)*Math.PI/180;
-	   
 		var x = canvas.width/2;
 		var y = canvas.height/2;
-
 		var ctx = canvas.getContext('2d');
-
 		ctx.beginPath();
 		ctx.clearRect(0, 0, canvas.width, canvas.height);
-
 		ctx.arc(x, y, r, angle-Math.asin(1/5)
 		             , angle+Math.asin(1/5), true);
 		ctx.arc(x, y, 3*r/5, angle+Math.asin(1/3)
@@ -299,8 +285,8 @@ function landolt(rl,r, ran){
 
 //  step-3
 function chk3() {
-  idx = parseInt(document.getElementById("pobject").selectedIndex);
-  chk = parseInt(document.getElementById("pobject").options[idx].value);
+  let idx = parseInt(document.getElementById("pobject").selectedIndex);
+  let chk = parseInt(document.getElementById("pobject").options[idx].value);
   
   start = chk;
   if (chk == 1) {
@@ -310,8 +296,8 @@ function chk3() {
     r_result = chk-1;
     l_result = chk-1;
   }
-
-  test_no= 0;
+  now = chk;
+  test_no = 0;
   test_ok = 0;
   test_ng = 0;
   imgset(chk, 1);
@@ -349,53 +335,51 @@ function chk8() {
   }
 }
 function chk9() {
-  chk = $("input[name='l_ran']:checked").val();
+  let chk = $("input[name='l_ran']:checked").val();
   if (chk) {
       var r_ran = parseInt($("input[name='r_ran']:checked").val());
       var l_ran = parseInt($("input[name='l_ran']:checked").val());
 
       document.getElementById("view_r_result").innerHTML = r_result;
       document.getElementById("view_l_result").innerHTML = l_result;
+      localStorage.setItem('siryoku_r_result', r_result);
+      localStorage.setItem('siryoku_l_result', l_result);
 
       if (r_rg == 1) {
           document.getElementById("view_r_kinshi").innerHTML = "近視傾向";
+          localStorage.setItem('siryoku_r_rg', "近視傾向");
       } else if (r_rg == 2) {
           document.getElementById("view_r_kinshi").innerHTML = "遠視傾向";
+          localStorage.setItem('siryoku_r_rg', "遠視傾向");
       } else {
           document.getElementById("view_r_kinshi").innerHTML = "不明";
+          localStorage.setItem('siryoku_r_rg', "不明");
       }
       if (l_rg == 1) {
           document.getElementById("view_l_kinshi").innerHTML = "近視傾向";
+          localStorage.setItem('siryoku_l_rg', "近視傾向");
       } else if (l_rg == 2) {
           document.getElementById("view_l_kinshi").innerHTML = "遠視傾向";
+          localStorage.setItem('siryoku_l_rg', "遠視傾向");
       } else {
           document.getElementById("view_l_kinshi").innerHTML = "不明";
+          localStorage.setItem('siryoku_l_rg', "不明");
       }
       if (r_ran == 1) {
           document.getElementById("view_r_ranshi").innerHTML = "乱視あり";
+          localStorage.setItem('siryoku_r_ran', "乱視あり");
       } else {
           document.getElementById("view_r_ranshi").innerHTML = "乱視なし";
+          localStorage.setItem('siryoku_r_ran', "乱視なし");
       }
       if (l_ran == 1) {
           document.getElementById("view_l_ranshi").innerHTML = "乱視あり";
+          localStorage.setItem('siryoku_l_ran', "乱視あり");
       } else {
           document.getElementById("view_l_ranshi").innerHTML = "乱視なし";
+          localStorage.setItem('siryoku_l_ran', "乱視なし");
       }
       // 結果をlocalstorageに保存
-  
-      localStorage.setItem('siryoku_r_result', siryoku[r_result]);
-      localStorage.setItem('siryoku_l_result', siryoku[l_result]);
-      localStorage.setItem('siryoku_r_rg', r_rg);
-      localStorage.setItem('siryoku_l_rg', l_rg);
-      localStorage.setItem('siryoku_r_ran', r_ran);
-      localStorage.setItem('siryoku_l_ran', l_ran);
-      // $.cookie("siryoku_r_result", siryoku[r_result], { path: "/", expires: 100 });
-      // $.cookie("siryoku_l_result", siryoku[l_result], { path: "/", expires: 100 });
-      // $.cookie("siryoku_r_rg"    , r_rg             , { path: "/", expires: 100 });
-      // $.cookie("siryoku_l_rg"    , l_rg             , { path: "/", expires: 100 });
-      // $.cookie("siryoku_r_ran"   , r_ran            , { path: "/", expires: 100 });
-      // $.cookie("siryoku_l_ran"   , l_ran            , { path: "/", expires: 100 });
-      // 結果を16パターンに振分
       var kinshi = 0;
 //        if ((r_rg == 2 && l_rg == 2) || (r_rg == 2 && l_rg == 3) || (r_rg == 3 && l_rg == 2)) kinshi = 1;
 //        if ((r_rg == 1 && l_rg == 1) || (r_rg == 1 && l_rg == 3) || (r_rg == 3 && l_rg == 1)) kinshi = 1;
